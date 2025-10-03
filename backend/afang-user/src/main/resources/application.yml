@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: afang-user
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+# Tencent Cloud COS Configuration (optional)
+# cos:
+#   client:
+#     host: your-cos-host
+#     secretId: your-secret-id
+#     secretKey: your-secret-key
+#     region: your-region
+#     bucket: your-bucket
