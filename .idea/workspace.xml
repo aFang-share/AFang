@@ -4,12 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93e83ea8-70e8-4432-8f0f-697c03426175" name="Changes" comment="" />
+    <list default="true" id="93e83ea8-70e8-4432-8f0f-697c03426175" name="Changes" comment="fixbackend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "0WuXiaofang"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/0WuXiaofang/AFang.git",
+    "accountId": "79edf78e-034a-4671-97b9-630f7e4fa047"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -21,6 +39,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "E:/coding/AFang",
     "node.js.detected.package.eslint": "true",
@@ -49,10 +68,24 @@
       <updated>1759481726649</updated>
       <workItem from="1759481729467" duration="803000" />
       <workItem from="1759491587386" duration="3037000" />
+      <workItem from="1759572201380" duration="667000" />
     </task>
+    <task id="LOCAL-00001" summary="fixbackend">
+      <option name="closed" value="true" />
+      <created>1759572246093</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1759572246093</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixbackend" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixbackend" />
   </component>
 </project>
