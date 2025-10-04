@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93e83ea8-70e8-4432-8f0f-697c03426175" name="Changes" comment="fixbackend">
-      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/mapper/dto/user/UsersDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/mapper/user/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/vo/user/UserVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/impl/user/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/user/UsersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/AfangUserBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/AfangUserBackendApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/afang-user/src/views/Projects.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/afang-user/src/views/Projects.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
