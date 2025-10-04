@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: afang-user-backend
+server:
+  port: 8123
+  servlet:
+    context-path: /api

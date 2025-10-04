@@ -3,9 +3,22 @@ spring:
     name: afang-user
 
 server:
-  port: 8080
+  port: 8123
   servlet:
     context-path: /api
+
+# knife4j
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+
+# Swagger configuration
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
+
 
 # Tencent Cloud COS Configuration (optional)
 # cos:

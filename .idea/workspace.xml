@@ -10,10 +10,10 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="33Y6b3fGb8bT1sdVOE2SIOHwhko" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -22,6 +22,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/coding/AFang",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1759481726649</updated>
       <workItem from="1759481729467" duration="803000" />
+      <workItem from="1759491587386" duration="3037000" />
     </task>
     <servers />
   </component>
