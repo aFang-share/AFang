@@ -4,7 +4,9 @@
       "Read(//e/coding/AFang/frontend/**)",
       "Bash(npm install)",
       "Bash(npm run type-check:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npx vue-tsc:*)"
     ],
     "deny": [],
     "ask": []

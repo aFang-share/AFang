@@ -25,10 +25,10 @@
       <template v-if="userStore.isLoggedIn && userStore.userInfo">
         <a-dropdown>
           <div class="user-info">
-            <a-avatar :src="userStore.userInfo.avatar" :size="32">
-              {{ userStore.userInfo.username.charAt(0).toUpperCase() }}
+            <a-avatar :src="userStore.userInfo?.avatar" :size="32">
+              {{ userStore.userInfo?.username?.charAt(0).toUpperCase() || 'U' }}
             </a-avatar>
-            <span class="username">{{ userStore.userInfo.username }}</span>
+            <span class="username">{{ userStore.userInfo?.username }}</span>
           </div>
           <template #overlay>
             <a-menu>
