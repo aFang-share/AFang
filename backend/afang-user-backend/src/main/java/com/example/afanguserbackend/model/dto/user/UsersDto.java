@@ -1,9 +1,12 @@
-package com.example.afanguserbackend.model.vo.user;
+package com.example.afanguserbackend.model.dto.user;
 
+import lombok.Builder;
 import lombok.Data;
 
 @Data
-public class UserVo {
+@Builder
+public class UsersDto {
+    private Long id;
     private String username;
     private String password;
     private String email;
@@ -11,4 +14,7 @@ public class UserVo {
     private String avatar;
     private String status;
     private String userRole;
+    private Integer pageNum = 1;
+    private Integer pageSize = 10;
+
 }

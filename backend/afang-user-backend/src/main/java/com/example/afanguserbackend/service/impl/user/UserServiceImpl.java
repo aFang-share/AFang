@@ -2,7 +2,7 @@ package com.example.afanguserbackend.service.impl.user;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.afanguserbackend.mapper.user.UsersMapper;
-import com.example.afanguserbackend.mapper.dto.user.UsersDto;
+import com.example.afanguserbackend.model.dto.user.UsersDto;
 import com.example.afanguserbackend.model.entity.user.Users;
 import com.example.afanguserbackend.model.vo.user.UserVo;
 import com.example.afanguserbackend.service.user.UsersService;

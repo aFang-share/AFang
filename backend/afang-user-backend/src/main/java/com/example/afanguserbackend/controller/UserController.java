@@ -1,6 +1,6 @@
 package com.example.afanguserbackend.controller;
 
-import com.example.afanguserbackend.mapper.dto.user.UsersDto;
+import com.example.afanguserbackend.model.dto.user.UsersDto;
 import com.example.afanguserbackend.model.vo.user.UserVo;
 import com.example.afanguserbackend.service.user.UsersService;
 import lombok.RequiredArgsConstructor;
