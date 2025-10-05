@@ -26,4 +26,24 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
         userVo.setPassword(usersDto.getPassword());
         return userVo;
     }
+
+    @Override
+    public UserVo getUserById(Long id) {
+        return null;
+    }
+
+    @Override
+    public UserVo getUserByUsername(String username) {
+        return null;
+    }
+
+    @Override
+    public UserVo getUserByEmail(String email) {
+        return null;
+    }
+
+    @Override
+    public UserVo updateUser(UsersDto usersDto) {
+        return null;
+    }
 }
