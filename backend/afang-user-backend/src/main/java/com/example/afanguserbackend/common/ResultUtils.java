@@ -3,7 +3,7 @@ package com.example.afanguserbackend.common;
 import com.example.afanguserbackend.exception.ErrorCode;
 
 /**
- * 快速构造响应结果的工具类
+ * 快速构造响应结果。的工具类
  */
 public class ResultUtils {
 
