@@ -23,4 +23,10 @@ UsersService extends IService<Users> {
   void deleteUser(Long id);
   //  分页查询用户
   PageResponse<UserVo> getUsers(PageRequest pageRequest);
+
+  /**
+   * test
+   * @param usersDto
+   */
+  void addusers(UsersDto usersDto);
 }

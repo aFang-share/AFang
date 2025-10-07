@@ -1,9 +1,11 @@
 package com.example.afanguserbackend.model.vo.user;
-import lombok.Data;
-import lombok.Setter;
+import lombok.*;
 
 //VO类用于封装数据
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserVo {
     private String username;
     private String password;

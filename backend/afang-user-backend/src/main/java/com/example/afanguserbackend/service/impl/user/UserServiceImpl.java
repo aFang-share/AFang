@@ -124,4 +124,10 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
         return pageResponse;
     }
 
+    @Override
+    public void addusers(UsersDto dto){
+        Users users = new Users();
+        BeanUtils.copyProperties(dto, users);
+        this.save(users);
+    }
 }

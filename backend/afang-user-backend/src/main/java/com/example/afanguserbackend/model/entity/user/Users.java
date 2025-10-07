@@ -19,6 +19,7 @@ public class Users implements Serializable {
     @Serial
 //    序列化版本号
     private static final long serialVersionUID = 1L;
+//    自增
     @TableId(type = IdType.AUTO)
     private Long id;
     private String username;

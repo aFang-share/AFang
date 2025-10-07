@@ -1,5 +1,7 @@
 package com.example.afanguserbackend.model.dto.user;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 
@@ -7,6 +9,7 @@ import lombok.Data;
 @Builder
 public class UsersDto {
     private Long id;
+
     private String username;
     private String password;
     private String email;
