@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93e83ea8-70e8-4432-8f0f-697c03426175" name="Changes" comment="fixbackend">
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/enums/StatusCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/mapper/user/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/mapper/user/UsersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/BaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/ResultUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/ResultUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" afterDir="false" />
     </list>
-    <list id="1831fe43-600f-45e1-b83c-8a430ccfec6d" name="Changes by 18747" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/vo/user/UserVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/vo/user/UserVo.java" afterDir="false" />
-    </list>
-    <list id="b99d1ce1-289e-4807-becb-32f21a0ce6ec" name="Changes by yue" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/dto/user/UsersDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/dto/user/UsersDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/impl/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/impl/user/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/user/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/user/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list id="1831fe43-600f-45e1-b83c-8a430ccfec6d" name="Changes by 18747" comment="" />
+    <list id="b99d1ce1-289e-4807-becb-32f21a0ce6ec" name="Changes by yue" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,16 +34,6 @@
     "accountId": "79edf78e-034a-4671-97b9-630f7e4fa047"
   }
 }]]></component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java">
-      <ranges>
-        <range start1="3" end1="4" start2="3" end2="3" changelist="1831fe43-600f-45e1-b83c-8a430ccfec6d" />
-        <range start1="6" end1="6" start2="5" end2="6" changelist="1831fe43-600f-45e1-b83c-8a430ccfec6d" />
-        <range start1="20" end1="22" start2="20" end2="25" changelist="b99d1ce1-289e-4807-becb-32f21a0ce6ec" />
-        <range start1="23" end1="24" start2="26" end2="26" changelist="b99d1ce1-289e-4807-becb-32f21a0ce6ec" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5

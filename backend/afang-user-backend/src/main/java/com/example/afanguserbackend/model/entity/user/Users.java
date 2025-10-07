@@ -27,7 +27,7 @@ public class Users implements Serializable {
     private String email;
     private String phone;
     private String avatar;
-//    private String role;
+    private String role;
     private String status;
 //    默认映射creat_time mysql字段
     private String createTime;
