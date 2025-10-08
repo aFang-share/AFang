@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93e83ea8-70e8-4432-8f0f-697c03426175" name="Changes" comment="fixbackend">
-      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/enums/StatusCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/exception/service/GlobalExceptionHandle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/BaseResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/ResultUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/common/ResultUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/model/entity/user/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/exception/ErrorCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/impl/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/mapper/service/impl/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/service/user/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/afang-user-backend/src/main/java/com/example/afanguserbackend/mapper/service/user/UsersService.java" afterDir="false" />
     </list>
     <list id="1831fe43-600f-45e1-b83c-8a430ccfec6d" name="Changes by 18747" comment="" />
     <list id="b99d1ce1-289e-4807-becb-32f21a0ce6ec" name="Changes by yue" comment="" />
@@ -75,7 +76,7 @@
       <workItem from="1759481729467" duration="803000" />
       <workItem from="1759491587386" duration="3037000" />
       <workItem from="1759572201380" duration="667000" />
-      <workItem from="1759809413821" duration="3601000" />
+      <workItem from="1759809413821" duration="4196000" />
     </task>
     <task id="LOCAL-00001" summary="fixbackend">
       <option name="closed" value="true" />

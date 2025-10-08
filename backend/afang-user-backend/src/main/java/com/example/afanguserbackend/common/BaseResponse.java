@@ -1,8 +1,6 @@
 package com.example.afanguserbackend.common;
 
-import com.example.afanguserbackend.exception.ErrorCode;
 import lombok.Data;
-import org.apache.ibatis.type.NStringTypeHandler;
 
 import java.io.Serializable;
 

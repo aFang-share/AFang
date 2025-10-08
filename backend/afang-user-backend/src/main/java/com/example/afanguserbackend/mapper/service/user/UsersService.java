@@ -1,4 +1,4 @@
-package com.example.afanguserbackend.service.user;
+package com.example.afanguserbackend.mapper.service.user;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.afanguserbackend.common.PageRequest;

@@ -4,7 +4,7 @@ import com.example.afanguserbackend.common.BaseResponse;
 import com.example.afanguserbackend.common.ResultUtils;
 import com.example.afanguserbackend.enums.StatusCode;
 import com.example.afanguserbackend.model.dto.user.UsersDto;
-import com.example.afanguserbackend.service.user.UsersService;
+import com.example.afanguserbackend.mapper.service.user.UsersService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
