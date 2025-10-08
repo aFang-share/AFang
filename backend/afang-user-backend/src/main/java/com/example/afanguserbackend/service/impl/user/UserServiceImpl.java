@@ -1,4 +1,4 @@
-package com.example.afanguserbackend.mapper.service.impl.user;
+package com.example.afanguserbackend.service.impl.user;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -9,7 +9,7 @@ import com.example.afanguserbackend.mapper.user.UsersMapper;
 import com.example.afanguserbackend.model.dto.user.UsersDto;
 import com.example.afanguserbackend.model.entity.user.Users;
 import com.example.afanguserbackend.model.vo.user.UserVo;
-import com.example.afanguserbackend.mapper.service.user.UsersService;
+import com.example.afanguserbackend.service.user.UsersService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -92,7 +92,7 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
         user.setUsername(usersDto.getUsername());
         user.setEmail(usersDto.getEmail());
         user.setPhone(usersDto.getPhone());
-        user.setUpdateTime(String.valueOf(LocalDateTime.now()));
+        user.setUpdateTime(LocalDateTime.now());
         return null;
     }
 
@@ -125,9 +125,15 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
     }
 
     @Override
-    public void addusers(UsersDto dto){
+    public boolean addusers(UsersDto dto){
         Users users = new Users();
-        BeanUtils.copyProperties(dto, users);
-        this.save(users);
+        Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", dto.getUsername()));
+        if (user==null){//            用户名不存在
+            BeanUtils.copyProperties(dto, users);
+            return this.save(users);
+        }else {
+            return false;
+            }
+
     }
 }

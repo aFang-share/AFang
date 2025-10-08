@@ -1,6 +1,8 @@
 package com.example.afanguserbackend.model.vo.user;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 //VO类用于封装数据
 @Data
 @Builder
@@ -16,6 +18,8 @@ public class UserVo {
     private String userRole;
     //        将createTime转换为Date类型
     @Setter
-    private String createTime;
+    private LocalDateTime createTime;
+    @Setter
+    private LocalDateTime updateTime;
 
 }

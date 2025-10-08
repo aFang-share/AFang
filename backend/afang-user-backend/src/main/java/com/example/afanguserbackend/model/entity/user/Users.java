@@ -1,6 +1,8 @@
 package com.example.afanguserbackend.model.entity.user;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,6 +11,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -27,9 +30,11 @@ public class Users implements Serializable {
     private String email;
     private String phone;
     private String avatar;
-    private String role;
+    private String userRole;
     private String status;
 //    默认映射creat_time mysql字段
-    private String createTime;
-    private String updateTime;
+    @TableField(fill = FieldFill.INSERT)
+    private LocalDateTime createTime;
+    @TableField(fill = FieldFill.INSERT_UPDATE)
+    private LocalDateTime updateTime;
 }

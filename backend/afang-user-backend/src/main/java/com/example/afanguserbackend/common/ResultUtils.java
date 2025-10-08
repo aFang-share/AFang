@@ -31,5 +31,7 @@ public class ResultUtils {
         return new BaseResponse<>(code, message, null);
     }
 
-
+    public static <T> BaseResponse<T> fail(String message){
+        return new BaseResponse<>(StatusCode.RUN_ERROR.getCode(), message, null);
+    }
 }
