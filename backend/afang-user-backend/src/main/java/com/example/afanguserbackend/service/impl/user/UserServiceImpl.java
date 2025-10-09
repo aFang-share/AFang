@@ -6,10 +6,12 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.afanguserbackend.common.PageRequest;
 import com.example.afanguserbackend.common.PageResponse;
 import com.example.afanguserbackend.mapper.user.UsersMapper;
-import com.example.afanguserbackend.model.dto.user.UsersDto;
+import com.example.afanguserbackend.model.dto.user.AddUsersDto;
+import com.example.afanguserbackend.model.dto.user.LoginUserDto;
 import com.example.afanguserbackend.model.entity.user.Users;
 import com.example.afanguserbackend.model.vo.user.UserVo;
 import com.example.afanguserbackend.service.user.UsersService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -20,20 +22,12 @@ import java.util.stream.Collectors;
 //UserVo 应该只包含用户ID、用户名、邮箱、创建时间等非敏感信息，密码字段应该完全不存在于VO中。
 
 @Service
+@Slf4j
 public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements UsersService {
 
     @Override
-    public UserVo addUser(UsersDto usersDto) {
-
-        baseMapper.insert(Users.builder()
-                .username(usersDto.getUsername())
-                .password(usersDto.getPassword())
-                .email(usersDto.getEmail())
-                .build());
-        UserVo userVo =new  UserVo();
-        userVo.setUsername(usersDto.getUsername());
-//        userVo.setPassword(usersDto.getPassword());密码不可以返回明文密码，需要加密
-        return userVo;
+    public UserVo addUser(AddUsersDto addUsersDto) {
+        return null;
     }
 
     @Override
@@ -84,14 +78,19 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
     }
 
     @Override
-    public UserVo updateUser(UsersDto usersDto) {
+    public UserVo updateUser(AddUsersDto addUsersDto) {
+        return null;
+    }
+
+    @Override
+    public UserVo upDateUser(AddUsersDto addUsersDto) {
 //        更新用户信息
-        Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", usersDto.getUsername()));
+        Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", addUsersDto.getUsername()));
         if (user == null) {//        如果用户不存在，返回null
             return null; }
-        user.setUsername(usersDto.getUsername());
-        user.setEmail(usersDto.getEmail());
-        user.setPhone(usersDto.getPhone());
+        user.setUsername(addUsersDto.getUsername());
+        user.setEmail(addUsersDto.getEmail());
+        user.setPhone(addUsersDto.getPhone());
         user.setUpdateTime(LocalDateTime.now());
         return null;
     }
@@ -125,7 +124,7 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
     }
 
     @Override
-    public boolean addusers(UsersDto dto){
+    public boolean addUsers(AddUsersDto dto){
         Users users = new Users();
         Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", dto.getUsername()));
         if (user==null){//            用户名不存在
@@ -134,6 +133,25 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
         }else {
             return false;
             }
+
+    }
+
+    @Override
+    public boolean loginUsers(AddUsersDto addUsersDto) {
+        return false;
+    }
+
+    @Override
+    public boolean loginUsers(LoginUserDto dto){
+        Users users = new Users();
+        Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", dto.getUsername()));
+        if (user==null){
+            return false;
+
+        }else {
+//用户存在验证密码
+            return user.getPassword().equals(dto.getPassword());
+        }
 
     }
 }
