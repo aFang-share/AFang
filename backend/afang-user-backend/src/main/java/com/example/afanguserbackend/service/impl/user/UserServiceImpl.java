@@ -11,8 +11,10 @@ import com.example.afanguserbackend.model.dto.user.LoginUserDto;
 import com.example.afanguserbackend.model.entity.user.Users;
 import com.example.afanguserbackend.model.vo.user.UserVo;
 import com.example.afanguserbackend.service.user.UsersService;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -23,8 +25,9 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements UsersService {
-
+    private final PasswordEncoder passwordEncoder;
     @Override
     public UserVo addUser(AddUsersDto addUsersDto) {
         return null;
@@ -125,15 +128,16 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
 
     @Override
     public boolean addUsers(AddUsersDto dto){
+//        TODO：代码优化
         Users users = new Users();
         Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", dto.getUsername()));
         if (user==null){//            用户名不存在
             BeanUtils.copyProperties(dto, users);
+            users.setPassword(passwordEncoder.encode(dto.getPassword()));
             return this.save(users);
         }else {
             return false;
             }
-
     }
 
     @Override
@@ -150,8 +154,7 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
 
         }else {
 //用户存在验证密码
-            return user.getPassword().equals(dto.getPassword());
+            return passwordEncoder.matches(dto.getPassword(),user.getPassword());
         }
-
     }
 }
