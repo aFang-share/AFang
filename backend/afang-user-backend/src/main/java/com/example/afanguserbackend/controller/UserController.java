@@ -4,6 +4,7 @@ import com.example.afanguserbackend.common.BaseResponse;
 import com.example.afanguserbackend.common.ResultUtils;
 import com.example.afanguserbackend.model.dto.user.AddUsersDto;
 import com.example.afanguserbackend.model.dto.user.LoginUserDto;
+import com.example.afanguserbackend.model.dto.user.UpdateUsersDto;
 import com.example.afanguserbackend.service.user.UsersService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +30,12 @@ public class UserController {
     @PostMapping("/loginUser")
     public BaseResponse<Void> loginUser(@RequestBody LoginUserDto loginUserDto) {
         return usersService.loginUsers(loginUserDto) ? ResultUtils.success(): ResultUtils.fail("用户登录失败!");
+    }
+
+        //    更新用户信息
+    @PostMapping("/updateUser")
+    public BaseResponse<Void> update(@RequestBody UpdateUsersDto updateUsersDto) {
+        return usersService.updateUsers(updateUsersDto) ? ResultUtils.success(): ResultUtils.fail("用户信息更改失败!");
     }
 }
 
