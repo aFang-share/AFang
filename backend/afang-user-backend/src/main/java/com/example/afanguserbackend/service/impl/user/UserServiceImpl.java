@@ -26,6 +26,7 @@ public class UserServiceImpl extends ServiceImpl<UsersMapper, Users> implements 
     @Override
     public boolean addUsers(AddUsersDto dto){
 //        TODO：代码优化
+        log.info("接收信息",dto);
         Users users = new Users();
         Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", dto.getUsername()));
         if (user==null){//            用户名不存在
