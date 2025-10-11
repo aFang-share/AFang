@@ -197,3 +197,8 @@
 2025-10-10 22:15:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 8123 (http) with context path '/api'
 2025-10-10 22:15:01 [restartedMain] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 1.13 seconds (process running for 247.528)
 2025-10-10 22:15:01 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] - Condition evaluation unchanged
+2025-10-10 22:16:41 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-10 22:16:41 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-10 22:16:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:660] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-10 22:16:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-3 - Shutdown initiated...
+2025-10-10 22:16:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-3 - Shutdown completed.
