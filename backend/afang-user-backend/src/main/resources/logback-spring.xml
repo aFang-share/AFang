@@ -2,7 +2,7 @@
 <configuration scan="true">
     <!-- 定义日志文件路径 -->
     <property name="LOG_PATH" value="./logs" />
-    <property name="LOG_FILE" value="${LOG_PATH}/file_transfers.log" />
+    <property name="LOG_FILE" value="${LOG_PATH}/aFang.log" />
 
     <!-- 控制台输出 (添加更多颜色) -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">

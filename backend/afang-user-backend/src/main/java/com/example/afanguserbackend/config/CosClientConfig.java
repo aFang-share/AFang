@@ -60,4 +60,5 @@ public class CosClientConfig {
         // 生成cos客户端
         return new COSClient(cred, clientConfig);
     }
+
 }
