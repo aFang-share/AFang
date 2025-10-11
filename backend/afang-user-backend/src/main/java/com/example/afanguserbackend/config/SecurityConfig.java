@@ -11,6 +11,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
@@ -29,25 +31,6 @@ public class SecurityConfig {
     private UserDetailsService userDetailsService;
 
 
-//    public SecurityConfig(JwtFilter jwtFilter, UserDetailsService userDetailsService) {
-//        this.jwtFilter = jwtFilter;
-//        this.userDetailsService = userDetailsService;
-//    }
-
-    //    白名单
-    private static final List<String> AUTH_WHITELIST = Arrays.asList(
-            "/api/user/login",
-            "api/user/register",
-            "api/user/verifyCode",
-            "api/user/verifyEmail",
-            "api/user/verifyPhone",
-            "api/user/resetPassword"
-    );
-
-    @Bean
-    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
-        return authConfig.getAuthenticationManager();
-    }
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -103,4 +86,26 @@ public class SecurityConfig {
 
         return source;
     }
+
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+//        密码加密强度3-40
+        return new BCryptPasswordEncoder(12);
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authConfig) throws Exception {
+        return authConfig.getAuthenticationManager();
+    }
+
+    //    白名单
+    private static final List<String> AUTH_WHITELIST = Arrays.asList(
+            "/api/user/login",
+            "api/user/register",
+            "api/user/verifyCode",
+            "api/user/verifyEmail",
+            "api/user/verifyPhone",
+            "api/user/resetPassword"
+    );
 }

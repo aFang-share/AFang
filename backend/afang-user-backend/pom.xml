@@ -93,7 +93,6 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
-            <version>5.8.0</version> <!-- 根据你的Spring Boot版本选择 -->
         </dependency>
 <!--        JWT sercurit-->
 <!--        <dependency>-->
@@ -151,6 +150,11 @@
 <!--            <artifactId>alibabacloud-dysmsapi20170525</artifactId>-->
 <!--            <version>3.0.2</version>-->
 <!--        </dependency>-->
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>13.0</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -1,7 +1,21 @@
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+
 #严格缩进ym
 spring:
+  application:
+    name: afang-user-backend
+  main:
+    allow-bean-definition-overriding: true
   # redis配置
   data:
+    datasource:
+      url: jdbc:mysql://localhost:3306/afang?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Shanghai
+      username: root
+      password: Mysql123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
     redis:
       host: localhost
       port: 6379
@@ -15,38 +29,26 @@ spring:
           max-idle: 8
           min-idle: 0
 
-  application:
-    name: afang-user-backend
-
-  datasource:
-    url: jdbc:mysql://localhost:3306/afang?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=Asia/Shanghai
-    username: root
-    password: Mysql123456
-    driver-class-name: com.mysql.cj.jdbc.Driver
-server:
-  port: 8123
-  servlet:
-    context-path: /api
-
-  #  jpa:
-  #    hibernate:
-  #      ddl-auto: update
-  #    show-sql: true
-  #    properties:
-  #      hibernate:
-  #        dialect: org.hibernate.dialect.MySQL8Dialect
-  #        format_sql: true
-  #        connection:
-  #          charset: utf8mb4
-  #          unicode: true
-  #    database:
-security:
-  oauth2:
-    resource server:
-      opaque token:
-        introspection-uri: "https://example.com/check-token"
-        client-id: "my-client-id"
-        client-secret: "my-client-secret"
+#
+#    jpa:
+#      hibernate:
+#        ddl-auto: update
+#      show-sql: true
+#      properties:
+#        hibernate:
+#          dialect: org.hibernate.dialect.MySQL8Dialect
+#          format_sql: true
+#          connection:
+#            charset: utf8mb4
+#            unicode: true
+#      database:
+#security:
+#  oauth2:
+#    resource server:
+#      opaque token:
+#        introspection-uri: "https://example.com/check-token"
+#        client-id: "my-client-id"
+#        client-secret: "my-client-secret"
 #JWT密钥
 jwt:
   secret: jwtmw
