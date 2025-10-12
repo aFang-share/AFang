@@ -9,6 +9,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.jackson.io.JacksonDeserializer;
 import io.jsonwebtoken.jackson.io.JacksonSerializer;
 import jakarta.validation.constraints.NotNull;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -26,12 +27,21 @@ import java.util.Date;
  */
 @Slf4j
 @Component
+@RequiredArgsConstructor
 public class JwtUtil {
 
     @Value("${jwt.secret}") // 从配置中读取密钥
     private String secretKey;
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper;
+//
+//    public JwtUtil() {
+//        this.objectMapper = new ObjectMapper();
+//        // 注册 Java 8 时间模块以支持 LocalDateTime 序列化
+//        this.objectMapper.registerModule(new JavaTimeModule());
+//        // 禁用将日期写为时间戳
+//        this.objectMapper.disable(com.fasterxml.jackson.databind.SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+//    }
 
     // 获取签名密钥
     private @NotNull Key getSigningKey() {

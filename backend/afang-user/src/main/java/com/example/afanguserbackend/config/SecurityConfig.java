@@ -1,9 +1,11 @@
 package com.example.afanguserbackend.config;
 
+import com.example.afanguserbackend.filter.JwtFilter;
 import com.example.afanguserbackend.utils.JwtUtil;
 import com.example.afanguserbackend.utils.RedisUtil;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -14,6 +16,7 @@ import org.springframework.security.config.annotation.web.configurers.AbstractHt
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
@@ -23,6 +26,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
+@Slf4j
 public class SecurityConfig {
 
     @Resource
@@ -30,7 +34,8 @@ public class SecurityConfig {
 
     @Resource
     private RedisUtil redisUtil;
-
+    @Resource
+    private JwtFilter jwtFilter;
 //    @Resource
 //    private UserDetailsService userDetailsService;
 
@@ -51,11 +56,12 @@ public class SecurityConfig {
                         .authenticationEntryPoint((request, response, authException) -> {
                             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                             response.setContentType("application/json;charset=UTF-8");
+//                            log.info("yc:{}", JSON.toJSONString(authException));
                             response.getWriter().write("{\"error\":\"未认证\"}");
                         })
-                );
+                )
                 // 将自定义 JWT 过滤器添加到过滤器链中
-//                .addFilterBefore(jwtFilter(), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
@@ -109,9 +115,9 @@ public class SecurityConfig {
 
     //    白名单
     private static final List<String> AUTH_WHITELIST = Arrays.asList(
-            "/api/user/loginUser",
-            "/api/user/registerUser",
-            "/api/user/loginUser",
+            "/user/loginUser",
+            "/user/registerUser",
+            "/user/loginUser",
             "/health/check"
     );
 }
