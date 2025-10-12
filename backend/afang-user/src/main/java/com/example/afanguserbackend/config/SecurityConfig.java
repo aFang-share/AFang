@@ -1,9 +1,11 @@
 package com.example.afanguserbackend.config;
 
+import com.alibaba.fastjson.JSON;
 import com.example.afanguserbackend.utils.JwtUtil;
 import com.example.afanguserbackend.utils.RedisUtil;
 import jakarta.annotation.Resource;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -23,6 +25,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebSecurity
+@Slf4j
 public class SecurityConfig {
 
     @Resource
@@ -51,6 +54,7 @@ public class SecurityConfig {
                         .authenticationEntryPoint((request, response, authException) -> {
                             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                             response.setContentType("application/json;charset=UTF-8");
+                            log.error("yc:{}", JSON.toJSONString(authException));
                             response.getWriter().write("{\"error\":\"未认证\"}");
                         })
                 );
@@ -109,9 +113,9 @@ public class SecurityConfig {
 
     //    白名单
     private static final List<String> AUTH_WHITELIST = Arrays.asList(
-            "/api/user/loginUser",
-            "/api/user/registerUser",
-            "/api/user/loginUser",
+            "/user/loginUser",
+            "/user/registerUser",
+            "/user/loginUser",
             "/health/check"
     );
 }
