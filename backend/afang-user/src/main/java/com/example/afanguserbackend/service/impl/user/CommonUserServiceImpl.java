@@ -1,5 +1,6 @@
 package com.example.afanguserbackend.service.impl.user;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.afanguserbackend.mapper.user.UsersMapper;
@@ -34,7 +35,8 @@ public class CommonUserServiceImpl extends ServiceImpl<UsersMapper, Users> imple
 
     @Override
     public UserDetails loadUserByUsername(String phone) throws UsernameNotFoundException {
-        Users user = baseMapper.selectOne(this.lambdaQuery().eq(Users::getPhone, phone));
+        LambdaQueryWrapper<Users> queryWrapper = new LambdaQueryWrapper<Users>().eq(Users::getPhone, phone);
+        Users user = baseMapper.selectOne(queryWrapper);
         if (user == null) {
             throw new RuntimeException("用户不存在");
         }

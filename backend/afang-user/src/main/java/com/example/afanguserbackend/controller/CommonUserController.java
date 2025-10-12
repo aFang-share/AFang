@@ -22,6 +22,8 @@ public class CommonUserController {
     //    更新用户信息
     @PostMapping("/updateUser")
     public BaseResponse<Void> update(@RequestBody UpdateUsersDto updateUsersDto) {
-        return commonUserService.updateUsers(updateUsersDto) ? ResultUtils.success() : ResultUtils.fail("用户信息更改失败!");
+        return commonUserService.updateUsers(updateUsersDto) ?
+                ResultUtils.success()
+                : ResultUtils.fail("用户信息更改失败!");
     }
 }

@@ -49,13 +49,16 @@ public class JwtFilter extends OncePerRequestFilter {
         String authorizationHeader = request.getHeader("Authorization");
 
 
-        if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
+        if (authorizationHeader != null ) {
             // 去掉 Bearer 前缀,获取token
-            String jwt = authorizationHeader.substring(7);
+            String jwt = authorizationHeader;
             // 解析用户信息
             Users users = jwtUtil.extractUser(jwt);
 
-            if (users != null && redisUtil.hasKey(USER_CACHE_KEY_PREFIX + users.getPhone()) && SecurityContextHolder.getContext().getAuthentication() == null) {
+            log.info("yc:{}", users);
+            if (users != null
+//                    && redisUtil.hasKey(USER_CACHE_KEY_PREFIX + users.getPhone())
+                    && SecurityContextHolder.getContext().getAuthentication() == null) {
                 UserDetails userDetails = userDetailsService.loadUserByUsername(users.getPhone());
 
                 if (jwtUtil.isTokenValid(jwt, users)) {
