@@ -22,9 +22,9 @@ import java.util.Map;
 public class AuthUserController {
     private final AuthUserService authUserService;
     @PostMapping("/registerUser")
-    public BaseResponse<Void> registerUser(@RequestBody RegisterUsersDto registerUsersDto) {
+    public BaseResponse<String> registerUser(@RequestBody RegisterUsersDto registerUsersDto) {
         //使用自定义返回,返回
-        return authUserService.registerUsers(registerUsersDto) ? ResultUtils.success() : ResultUtils.fail("用户创建失败!");
+        return  ResultUtils.success(authUserService.registerUsers(registerUsersDto));
     }
 
     @PostMapping("/loginUser")

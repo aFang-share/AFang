@@ -36,7 +36,7 @@ public class RedisUtil {
      * @param value 值，要存储的对象。
      * @param timeout 超时时间，以秒为单位，表示该键值对在 Redis 中的存活时间。
      */
-    public void set(String key, Object value, Duration timeout) {
+    public  void set(String key, Object value, Duration timeout) {
         redisTemplate.opsForValue().set(key, value, timeout);
     }
 
@@ -66,7 +66,7 @@ public class RedisUtil {
      * @param key 键，用于标识要删除的值。
      * @return 如果键被成功删除，则返回 {@code true}；否则返回 {@code false}。
      */
-    public Boolean delete(String key) {
+    public  Boolean delete(String key) {
         return redisTemplate.delete(key);
     }
 
