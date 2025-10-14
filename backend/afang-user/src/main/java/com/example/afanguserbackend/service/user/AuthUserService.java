@@ -17,7 +17,7 @@ public interface AuthUserService extends IService<Users> {
      *
      * @param registerUsersDto
      */
-    boolean addUsers(RegisterUsersDto registerUsersDto);
+    boolean registerUsers(RegisterUsersDto registerUsersDto);
 
     Map<String, String> loginUsers(LoginUserDto dto);
 

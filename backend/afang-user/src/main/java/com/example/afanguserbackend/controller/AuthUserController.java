@@ -24,7 +24,7 @@ public class AuthUserController {
     @PostMapping("/registerUser")
     public BaseResponse<Void> registerUser(@RequestBody RegisterUsersDto registerUsersDto) {
         //使用自定义返回,返回
-        return authUserService.addUsers(registerUsersDto) ? ResultUtils.success() : ResultUtils.fail("用户创建失败!");
+        return authUserService.registerUsers(registerUsersDto) ? ResultUtils.success() : ResultUtils.fail("用户创建失败!");
     }
 
     @PostMapping("/loginUser")

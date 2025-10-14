@@ -25,7 +25,7 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
     private final JwtUtil jwtUtil;
 
     @Override
-    public boolean addUsers(RegisterUsersDto dto) {
+    public boolean registerUsers(RegisterUsersDto dto) {
 //        TODO：代码优化
         log.info("接收信息", dto);
         Users users = new Users();
