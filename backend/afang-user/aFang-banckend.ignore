@@ -1,0 +1,7 @@
+# IDE
+.vscode/
+.idea/
+#JAVA
+.logs/
+#cluade
+.claude/
