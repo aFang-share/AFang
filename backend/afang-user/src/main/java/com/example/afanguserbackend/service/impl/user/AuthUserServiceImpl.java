@@ -38,20 +38,18 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
 //        TODO：代码优化
         log.info("接收信息", dto);
         Users users = new Users();
-        Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("username", dto.getUsername()));
-        if (user == null) {//            用户名不存在
+        Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("phone", dto.getPhone()));
+        if (user == null) {//            用户不存在
             BeanUtils.copyProperties(dto, users);
             users.setPassword(passwordEncoder.encode(dto.getPassword()));
             boolean saved = this.save(users);
             if (!saved) {
                 throw new RuntimeException("用户创建失败!");
             }
-            //将用户信息加入缓存
-//            redisUtil.set(USER_CACHE_KEY_PREFIX + userBase.getPhone(), userBase, USER_CACHE_DURATION);
 
-            //生成token并且返回
             //将用户信息加入缓存
-            redisUtil.set(USER_CACHE_KEY_PREFIX + user.getPhone(), user, USER_CACHE_DURATION);
+//TODO：edisUtil.set这里设置的Key需要优化为UUID。一个用户的标识。
+            redisUtil.set(USER_CACHE_KEY_PREFIX + users.getPhone(), users, USER_CACHE_DURATION);
 //            TODO:email验证码删除
 //            redisUtil.delete(VERIFICATION_CODE_KEY_PREFIX + RegisterUsersDto.getEmail());
 
