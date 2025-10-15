@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 
 @Service
@@ -63,7 +64,9 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
 
     @Override
     public Map<String, String> loginUsers(LoginUserDto dto) {
-        Users userRedis = (Users) redisUtil.get(USER_CACHE_KEY_PREFIX + dto.getPhone())
+//         redisUtil.get() 方法返回的是 Optional<Object>，
+        Optional<Object> userOptional = redisUtil.get(USER_CACHE_KEY_PREFIX + dto.getPhone());
+        Users userRedis = (Users) userOptional
                 .orElseGet(() -> {
                     Users userDB = baseMapper.selectOne(new QueryWrapper<Users>().eq("phone", dto.getPhone()));
                     if (userDB == null) {
