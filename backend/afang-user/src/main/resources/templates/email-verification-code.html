@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>验证码邮件</title>
+    <style>
+        /* 重置样式 */
+        body, table, td, div, p, a {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f5f5f5;
+            padding: 20px 0;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-header {
+            background-color: #4a6ee0;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .email-header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .email-body {
+            padding: 40px;
+        }
+
+        .verification-code {
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: center;
+            border: 1px dashed #dee2e6;
+        }
+
+        .code {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            color: #4a6ee0;
+            margin: 10px 0;
+        }
+
+        .instructions {
+            margin-bottom: 30px;
+            color: #666666;
+        }
+
+        .security-notice {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #856404;
+        }
+
+        .email-footer {
+            background-color: #f8f9fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+        }
+
+        .email-footer a {
+            color: #4a6ee0;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .email-body, .email-header, .email-footer {
+                padding: 20px;
+            }
+
+            .code {
+                font-size: 24px;
+                letter-spacing: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="email-container">
+    <div class="email-header">
+        <h1>验证您的邮箱地址</h1>
+    </div>
+
+    <div class="email-body">
+        <p>尊敬的用户，您好！</p>
+
+        <p class="instructions">您正在进行邮箱验证操作，请在验证页面输入以下验证码：</p>
+
+        <div class="verification-code">
+            <p>您的验证码是：</p>
+            <div class="code">{{CODE}}</div>
+            <p>此验证码将在 <strong>{{EXPIRATION_TIME}}</strong> 后失效</p>
+        </div>
+
+        <p>如果您没有进行此操作，请忽略此邮件。</p>
+
+        <div class="security-notice">
+            <p><strong>安全提示：</strong></p>
+            <p>请勿将验证码透露给任何人，包括我们的客服人员。我们绝不会通过电话或短信向您索要验证码。</p>
+        </div>
+    </div>
+
+    <div class="email-footer">
+        <p>此邮件由系统自动发送，请勿直接回复。</p>
+        <p>如有疑问，请联系 <a href="mailto:1276869026@qq.com">客服支持</a></p>
+        <p>&copy; aFang 保留所有权利.</p>
+    </div>
+</div>
+</body>
+</html>

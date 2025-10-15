@@ -17,8 +17,9 @@ public interface AuthUserService extends IService<Users> {
      *
      * @param registerUsersDto
      */
-    String registerUsers(RegisterUsersDto registerUsersDto);
+    String registerUsers(RegisterUsersDto registerUsersDto) throws Exception;
 
     Map<String, String> loginUsers(LoginUserDto dto);
+    void sendCodeByEmail(String email)throws Exception;
 
 }

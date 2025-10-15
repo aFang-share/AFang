@@ -106,6 +106,7 @@
             <artifactId>p6spy</artifactId>
             <version>3.9.1</version>
         </dependency>
+<!--        邮件-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
@@ -132,6 +133,7 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>2.20.0</version>
         </dependency>
+
     </dependencies>
 
     <build>

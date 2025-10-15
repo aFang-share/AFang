@@ -7,10 +7,7 @@ import com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDt
 import com.example.afanguserbackend.service.user.AuthUserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
@@ -21,10 +18,11 @@ import java.util.Map;
 @Slf4j
 public class AuthUserController {
     private final AuthUserService authUserService;
+
     @PostMapping("/registerUser")
-    public BaseResponse<String> registerUser(@RequestBody RegisterUsersDto registerUsersDto) {
+    public BaseResponse<String> registerUser(@RequestBody RegisterUsersDto registerUsersDto) throws Exception {
         //使用自定义返回,返回
-        return  ResultUtils.success(authUserService.registerUsers(registerUsersDto));
+        return ResultUtils.success(authUserService.registerUsers(registerUsersDto));
     }
 
     @PostMapping("/loginUser")
@@ -32,4 +30,9 @@ public class AuthUserController {
         return ResultUtils.success(authUserService.loginUsers(loginUserDto));
     }
 
+    @GetMapping("/sendCodeByEmail")
+    public BaseResponse<Void> sendCodeByEmail(String email) throws Exception {
+        authUserService.sendCodeByEmail(email);
+        return ResultUtils.success();
+    }
 }

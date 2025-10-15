@@ -7,6 +7,7 @@ import com.example.afanguserbackend.model.dto.user.auth_user_dto.LoginUserDto;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDto;
 import com.example.afanguserbackend.model.entity.user.Users;
 import com.example.afanguserbackend.service.user.AuthUserService;
+import com.example.afanguserbackend.utils.EmailUtil;
 import com.example.afanguserbackend.utils.JwtUtil;
 import com.example.afanguserbackend.utils.RedisUtil;
 import lombok.RequiredArgsConstructor;
@@ -32,9 +33,10 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
     private static final String VERIFICATION_CODE_KEY_PREFIX = "auth:verification-code:";
     private static final Duration USER_CACHE_DURATION = Duration.ofMinutes(24);
     private final RedisUtil redisUtil;
+    private final EmailUtil emailUtil;
 
     @Override
-    public String registerUsers(RegisterUsersDto dto) {
+    public String registerUsers(RegisterUsersDto dto) throws Exception {
 //        TODO：代码优化
         log.info("接收信息", dto);
         Users users = new Users();
@@ -49,22 +51,24 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
 
             //将用户信息加入缓存
 //TODO：edisUtil.set这里设置的Key需要优化为UUID。一个用户的标识。
-            redisUtil.set(USER_CACHE_KEY_PREFIX + users.getPhone(), users, USER_CACHE_DURATION);
+            RedisUtil.set(USER_CACHE_KEY_PREFIX + users.getPhone(), users, USER_CACHE_DURATION);
 //            TODO:email验证码删除
 //            redisUtil.delete(VERIFICATION_CODE_KEY_PREFIX + RegisterUsersDto.getEmail());
-
+            emailUtil.sendEmailByCode(dto.getEmail());
             //生成token并且返回
-            return jwtUtil.generateToken(users);
+//            return jwtUtil.generateToken(users);
+            return "注册成功";
         }
 //        如果用户存在直接抛出错误
+
         throw new RuntimeException("用户已存在");
     }
 
     @Override
     public Map<String, String> loginUsers(LoginUserDto dto) {
 //         redisUtil.get() 方法返回的是 Optional<Object>，
-        Optional<Object> userOptional = redisUtil.get(USER_CACHE_KEY_PREFIX + dto.getPhone());
-        Users userRedis = (Users) userOptional
+        Optional<Users> userOptional = RedisUtil.get(USER_CACHE_KEY_PREFIX + dto.getPhone(), Users.class);
+        Users userRedis = userOptional
                 .orElseGet(() -> {
                     Users userDB = baseMapper.selectOne(new QueryWrapper<Users>().eq("phone", dto.getPhone()));
                     if (userDB == null) {
@@ -80,11 +84,18 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
         if (userRedis == null) {
             throw new RuntimeException("用户不存在");
         }
-        redisUtil.set(USER_CACHE_KEY_PREFIX + dto.getPhone(), userRedis, USER_CACHE_DURATION);
+        RedisUtil.set(USER_CACHE_KEY_PREFIX + dto.getPhone(), userRedis, USER_CACHE_DURATION);
         Map<String, String> LoginMap = new HashMap<>();
         LoginMap.put("token", jwtUtil.generateToken(userRedis));
         return LoginMap;
-//            会不会是和上面一样编辑器
+    //            会不会是和上面一样编辑器
     }
-}
+
+    @Override
+    public void sendCodeByEmail(String email) throws Exception{
+        emailUtil.sendEmailByCode(email);
+        }
+
+    }
+
 

@@ -1,189 +1,313 @@
 package com.example.afanguserbackend.utils;
 
-import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
+import java.util.Collection;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-
+import java.util.concurrent.TimeUnit;
 
 /**
- * @author 18747
+ * Redis 工具类
+ *
+ * @author @yue
  */
 @Component
-@RequiredArgsConstructor
 public class RedisUtil {
 
-    private final RedisTemplate<String, Object> redisTemplate;
+    private static RedisTemplate<String, Object> redisTemplate;
 
     /**
-     * 将指定的键值对存储到 Redis 中
+     * Spring 依赖注入构造器
      *
-     * @param key 键，用于标识存储的值。
-     * @param value 值，要存储的对象。
+     * @param redisTemplate Spring 容器中的 RedisTemplate 实例
      */
-    public void set(String key, Object value) {
-        redisTemplate.opsForValue().set(key, value);
+    public RedisUtil(RedisTemplate<String, Object> redisTemplate) {
+        RedisUtil.redisTemplate = redisTemplate;
     }
 
     /**
-     * 将指定的键值对存储到 Redis 中，并设置其过期时间。
+     * 存储键值对，无过期时间
      *
-     * @param key 键，用于标识存储的值。
-     * @param value 值，要存储的对象。
-     * @param timeout 超时时间，以秒为单位，表示该键值对在 Redis 中的存活时间。
+     * @param key   存储键
+     * @param value 存储值
      */
-    public  void set(String key, Object value, Duration timeout) {
-        redisTemplate.opsForValue().set(key, value, timeout);
-    }
-
-    /**
-     * 从 Redis 中获取指定键的值。
-     *
-     * @param key 键，用于标识要获取的值。
-     * @return 值的 {@link Optional} 包装对象。如果键不存在或值为 null，则返回一个空的 {@link Optional}。
-     */
-    public Optional<Object> get(String key) {
-        return Optional.ofNullable(redisTemplate.opsForValue().get(key));
-    }
-
-    /**
-     * 从 Redis 中获取指定键对应的字符串值。
-     *
-     * @param key 键，用于标识要获取的值。
-     * @return 如果键存在且对应的值为字符串，则返回字符串值；如果键不存在或对应值不为字符串，则返回 null。
-     */
-    public String getString(String key) {
-        return (String) redisTemplate.opsForValue().get(key);
-    }
-
-    /**
-     * 从 Redis 中删除指定键的值。
-     *
-     * @param key 键，用于标识要删除的值。
-     * @return 如果键被成功删除，则返回 {@code true}；否则返回 {@code false}。
-     */
-    public  Boolean delete(String key) {
-        return redisTemplate.delete(key);
-    }
-
-    /**
-     * 检查指定的键是否存在于 Redis 中。
-     *
-     * @param key 键，用于标识要检查的值。
-     * @return 如果键存在于 Redis 中，则返回 {@code true}；否则返回 {@code false}。
-     */
-    public Boolean hasKey(String key) {
-        return redisTemplate.hasKey(key);
-    }
-
-    /**
-     * 设置指定键的过期时间。
-     *
-     * @param key 键，用于标识存储的值。
-     * @param timeout 超时时长，指定键的存活时间，使用 {@link Duration} 表示。
-     * @return 如果成功设置过期时间，则返回 {@code true}；如果键不存在或设置失败，则返回 {@code false}。
-     */
-    public Boolean expire(String key, Duration timeout) {
-        return redisTemplate.expire(key, timeout);
-    }
-
-
-    /**
-     * 为 Redis 中存储的指定键的值执行自增操作。
-     *
-     * @param key 键，用于标识 Redis 中存储的值。
-     * @param delta 增量值，可以是正数或负数。
-     * @return 自增操作后的新值。
-     */
-    public Long increment(String key, long delta) {
-        return redisTemplate.opsForValue().increment(key, delta);
-    }
-
-    /**
-     * 获取指定键的剩余过期时间。
-     *
-     * 如果键不存在或没有设置过期时间，则返回 {@link Duration#ZERO}。
-     *
-     * @param key 指定的键，用于查询其剩余过期时间。
-     * @return 如果键存在且设置了过期时间，则返回剩余的过期时间（以 {@link Duration} 表示）；否则返回 {@link Duration#ZERO}。
-     */
-    public Duration getExpire(String key) {
-        Long expire = redisTemplate.getExpire(key);
-        return expire == null ? Duration.ZERO : Duration.ofSeconds(expire);
-    }
-
-    /**
-     * 根据模式匹配获取 Redis 中的键集合。
-     *
-     * 使用通配符模式（例如，"user*" 匹配以 "user" 开头的键）从 Redis 中查找所有符合条件的键。
-     *
-     * @param pattern 键匹配模式，支持通配符表达式，例如："prefix*" 表示匹配以 "prefix" 开头的键。
-     * @return 符合匹配模式的键集合。如果没有匹配的键，返回空集合。
-     */
-    public Set<String> keys(String pattern) {
-        return redisTemplate.keys(pattern);
-    }
-
-    /**
-     * 将一个值从左侧推入指定 Redis 键的列表中。
-     *
-     * @param key 键，用于标识列表。
-     * @param value 值，要添加到列表的对象。
-     */
-    public void listPush(String key, Object value) {
-        redisTemplate.opsForList().leftPush(key, value);
-    }
-
-    /**
-     * 移除并返回存储在指定键的列表末尾的元素。
-     * 如果列表为空或键不存在，则返回 null。
-     *
-     * @param key 键，用于标识 Redis 中的目标列表。
-     * @return 被移除的元素对象。如果列表为空或键不存在，则返回 null。
-     */
-    public Object listPop(String key) {
-        return redisTemplate.opsForList().rightPop(key);
-    }
-
-    /**
-     * 更新 Redis 中指定的键对应的值。
-     *
-     * 如果指定的键存在于 Redis 中，则更新其关联的值；如果键不存在，则不执行任何操作。
-     *
-     * @param key 键，用于标识要更新的值。
-     * @param value 值，要更新的新数据。
-     * @return 如果更新成功（键存在并成功更新），返回 {@code true}；如果键不存在，返回 {@code false}。
-     */
-    public Boolean update(String key, Object value) {
-        if (Boolean.TRUE.equals(hasKey(key))) {
+    public static <T> void set(@NotNull String key, @Nullable T value) {
+        if (value != null) {
             redisTemplate.opsForValue().set(key, value);
-            return true;
+        }
+    }
+
+    /**
+     * 存储键值对并设置过期时间
+     *
+     * @param key     存储键
+     * @param value   存储值
+     * @param timeout 过期时间
+     * @param unit    时间单位
+     */
+    public static <T> void set(@NotNull String key, @Nullable T value, long timeout, @NotNull TimeUnit unit) {
+        if (value != null) {
+            redisTemplate.opsForValue().set(key, value, timeout, unit);
+        }
+    }
+
+    /**
+     * 存储键值对并设置过期时间
+     *
+     * @param key     存储键
+     * @param value   存储值
+     * @param timeout 过期时间-Duration
+     */
+    public static <T> void set(@NotNull String key, @Nullable T value, @NotNull Duration timeout) {
+        set(key, value, timeout.toSeconds(), TimeUnit.SECONDS);
+    }
+
+    /**
+     * 仅当键不存在时存储
+     *
+     * @param key   存储键
+     * @param value 存储值
+     * @return 键不存在且存储成功返回 true，否则返回 false
+     */
+    public static <T> boolean setIfAbsent(@NotNull String key, @Nullable T value) {
+        if (value != null) {
+            return Boolean.TRUE.equals(redisTemplate.opsForValue().setIfAbsent(key, value));
         }
         return false;
     }
 
     /**
-     * 从 Redis 中获取指定键对应的值，并尝试将其转换为目标类型。
-     * 如果值不存在或类型不匹配，则返回 null。
+     * 获取值并转换为指定类型
      *
-     * @param <T> 值的目标类型。
-     * @param key 键，用于标识要获取的值。
-     * @param type 目标类型的 {@code Class} 对象，用于指定返回值的类型。
-     * @return 如果键存在且值类型匹配，则返回目标类型的值；如果键不存在或值类型不匹配，则返回 null。
+     * @param key  存储键
+     * @param type 目标类型的 Class 对象
+     * @return 包装了目标类型值的 Optional，不存在为空 Optional
      */
-    public <T> T getValue(String key, @NotNull Class<T> type) {
-        // 从 Redis 获取值
+    public static <T> Optional<T> get(@NotNull String key, @NotNull Class<T> type) {
         Object value = redisTemplate.opsForValue().get(key);
-        // 检查类型是否匹配
-        if (type.isInstance(value)) {
-            // 返回目标类型
-            return type.cast(value);
+        return type.isInstance(value) ? Optional.of(type.cast(value)) : Optional.empty();
+    }
+
+    /**
+     * 快捷获取字符串值
+     *
+     * @param key 存储键
+     * @return 包装了字符串值的 Optional，不存在为空 Optional
+     */
+    public static Optional<String> getString(@NotNull String key) {
+        return get(key, String.class);
+    }
+
+    /**
+     * 批量获取多个键的值
+     *
+     * @param keys 键集合
+     * @return 与键顺序对应的 值列表，否咋为null
+     */
+    public static List<Object> multiGet(@NotNull Collection<String> keys) {
+        return redisTemplate.opsForValue().multiGet(keys);
+    }
+
+    /**
+     * 删除指定键
+     *
+     * @param key 要删除的键
+     * @return 删除成功返回 true，键不存在返回 false
+     */
+    public static boolean delete(@NotNull String key) {
+        return redisTemplate.delete(key);
+    }
+
+    /**
+     * 批量删除键
+     *
+     * @param keys 要删除的键集合
+     * @return 成功删除的键数量
+     */
+    public static long deleteBatch(@NotNull Collection<String> keys) {
+        return redisTemplate.delete(keys);
+    }
+
+    /**
+     * 检查键是否存在
+     *
+     * @param key 要检查的键
+     * @return 存在返回 true，否则返回 false
+     */
+    public static boolean hasKey(@NotNull String key) {
+        return redisTemplate.hasKey(key);
+    }
+
+    /**
+     * 设置键的过期时间
+     *
+     * @param key     要设置的键
+     * @param timeout 过期时间
+     * @param unit    时间单位
+     * @return 设置成功返回 true，键不存在返回 false
+     */
+    public static boolean expire(@NotNull String key, long timeout, @NotNull TimeUnit unit) {
+        return redisTemplate.expire(key, timeout, unit);
+    }
+
+    /**
+     * 设置键的过期时间
+     *
+     * @param key     要设置的键
+     * @param timeout 过期时间-Duration
+     * @return 设置成功返回 true，键不存在返回 false
+     */
+    public static boolean expire(@NotNull String key, @NotNull Duration timeout) {
+        return expire(key, timeout.toSeconds(), TimeUnit.SECONDS);
+    }
+
+    /**
+     * 移除键的过期时间（使其永久有效）
+     *
+     * @param key 要操作的键
+     * @return 移除成功返回 true，键不存在返回 false
+     */
+    public static boolean persist(@NotNull String key) {
+        return redisTemplate.persist(key);
+    }
+
+    /**
+     * 获取键的剩余过期时间
+     *
+     * @param key 要查询的键
+     * @return 剩余时间：秒，不存在为0
+     */
+    public static long getExpireSeconds(@NotNull String key) {
+        return redisTemplate.getExpire(key, TimeUnit.SECONDS);
+    }
+
+    /**
+     * 获取键的剩余过期时间
+     *
+     * @param key 要查询的键
+     * @return 剩余时间，不存在或已过期返回-Duration.ZERO
+     */
+    public static Duration getExpire(@NotNull String key) {
+        return Duration.ofSeconds(getExpireSeconds(key));
+    }
+
+    /**
+     * 模糊匹配查询键
+     *
+     * @param pattern 匹配模式
+     * @return 匹配到的键集合，无匹配时返回空集合
+     */
+    public static @NotNull Set<String> keys(@NotNull String pattern) {
+        return redisTemplate.keys(pattern);
+    }
+
+    /**
+     * 为键对应的值执行自增操作（支持整数）
+     *
+     * @param key   要操作的键
+     * @param delta 增量
+     * @return 自增后的结果
+     */
+    public static long increment(@NotNull String key, long delta) {
+        Long result = redisTemplate.opsForValue().increment(key, delta);
+        return result == null ? 0 : result;
+    }
+
+    /**
+     * 为键对应的值执行自增操作（支持浮点数）
+     *
+     * @param key   要操作的键
+     * @param delta 增量
+     * @return 自增后的结果
+     */
+    public static double increment(@NotNull String key, double delta) {
+        Double result = redisTemplate.opsForValue().increment(key, delta);
+        return result == null ? 0 : result;
+    }
+
+    /**
+     * 向列表左侧添加元素
+     *
+     * @param key   列表键
+     * @param value 要添加的元素
+     * @return 操作后列表的长度
+     */
+    public static <T> long listPush(@NotNull String key, @Nullable T value) {
+        Long size = null;
+        if (value != null) {
+            size = redisTemplate.opsForList().leftPush(key, value);
         }
-        // 如果值不存在或类型不匹配，返回 null
-        return null;
+        return size == null ? 0 : size;
+    }
+
+    /**
+     * 向列表右侧添加元素
+     *
+     * @param key   列表键
+     * @param value 要添加的元素
+     * @return 操作后列表的长度
+     */
+    public static <T> long listAdd(@NotNull String key, @Nullable T value) {
+        Long size = null;
+        if (value != null) {
+            size = redisTemplate.opsForList().rightPush(key, value);
+        }
+        return size == null ? 0 : size;
+    }
+
+    /**
+     * 从列表右侧弹出元素并返回
+     *
+     * @param key  列表键
+     * @param type 目标类型的 Class 对象
+     * @return 包装了弹出元素的 Optional，否则为空
+     */
+    public static <T> Optional<T> listPop(@NotNull String key, @NotNull Class<T> type) {
+        Object value = redisTemplate.opsForList().rightPop(key);
+        return type.isInstance(value) ? Optional.of(type.cast(value)) : Optional.empty();
+    }
+
+    /**
+     * 获取列表指定范围的元素
+     *
+     * @param key   列表键
+     * @param start 起始索引
+     * @param end   结束索引
+     * @return 元素列表，无元素时返回空列表
+     */
+    public static @NotNull List<Object> listRange(@NotNull String key, long start, long end) {
+        List<Object> range = redisTemplate.opsForList().range(key, start, end);
+        return range == null ? List.of() : range;
+    }
+
+    /**
+     * 获取列表长度
+     *
+     * @param key 列表键
+     * @return 列表长度，键不存在时返回 0
+     */
+    public static long listSize(@NotNull String key) {
+        Long size = redisTemplate.opsForList().size(key);
+        return size == null ? 0 : size;
+    }
+
+    /**
+     * 更新键值
+     *
+     * @param key   要更新的键
+     * @param value 新值
+     * @return 键存在且更新成功返回 true，否则返回 false
+     */
+    public static <T> boolean update(@NotNull String key, @Nullable T value) {
+        if (value != null) {
+            return Boolean.TRUE.equals(redisTemplate.opsForValue().setIfPresent(key, value));
+        }
+        return false;
     }
 }
