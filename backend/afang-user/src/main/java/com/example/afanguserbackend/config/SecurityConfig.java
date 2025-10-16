@@ -120,6 +120,7 @@ public class SecurityConfig {
             "/user/loginUser",
             "/health/check",
             "/user/sendCodeByEmail",
-            "user/validateEmailCode"
+            "user/validateEmailCode",
+            "user//validatePhoneCode"
     );
 }
