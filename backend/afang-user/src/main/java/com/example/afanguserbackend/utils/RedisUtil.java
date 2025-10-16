@@ -67,7 +67,16 @@ public class RedisUtil {
     public static <T> void set(@NotNull String key, @Nullable T value, @NotNull Duration timeout) {
         set(key, value, timeout.toSeconds(), TimeUnit.SECONDS);
     }
-
+    /**
+     * 存储键值对并设置过期时间
+     *
+     * @param key     存储键
+     * @param value   存储值
+     * @param timeout 过期时间
+     */
+    public static <T> void set(@NotNull String key, @NotNull T value, long timeout) {
+        set(key, value, timeout, TimeUnit.SECONDS);
+    }
     /**
      * 仅当键不存在时存储
      *

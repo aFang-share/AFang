@@ -20,7 +20,7 @@ public class AuthUserController {
     private final AuthUserService authUserService;
 
     @PostMapping("/registerUser")
-    public BaseResponse<String> registerUser(@RequestBody RegisterUsersDto registerUsersDto) throws Exception {
+    public BaseResponse<Map<String,String>> registerUser(@RequestBody RegisterUsersDto registerUsersDto) throws Exception {
         //使用自定义返回,返回
         return ResultUtils.success(authUserService.registerUsers(registerUsersDto));
     }
@@ -34,5 +34,14 @@ public class AuthUserController {
     public BaseResponse<Void> sendCodeByEmail(String email) throws Exception {
         authUserService.sendCodeByEmail(email);
         return ResultUtils.success();
+    }
+
+    /**
+     * 邮箱验证码验证，邮箱验证码登录
+     */
+    @PostMapping("/validateEmailCode")
+    public BaseResponse<String> validateEmailCode(@RequestBody Map<String, String> map) {
+        authUserService.validateEmailCode(map.get("code"),map.get("email"));
+        return  ResultUtils.success("验证成功，请前往登录");
     }
 }

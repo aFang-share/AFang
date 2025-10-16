@@ -36,30 +36,34 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
     private final EmailUtil emailUtil;
 
     @Override
-    public String registerUsers(RegisterUsersDto dto) throws Exception {
-//        TODO：代码优化
-        log.info("接收信息", dto);
+    public Map<String, String>  registerUsers(RegisterUsersDto dto) throws Exception {
+        //        TODO：代码优化
+        //写日志遵循lombok规范
+        log.info("接收信息{}", dto);
         Users users = new Users();
         Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("phone", dto.getPhone()));
         if (user == null) {//            用户不存在
             BeanUtils.copyProperties(dto, users);
             users.setPassword(passwordEncoder.encode(dto.getPassword()));
+            //比对注册时的接收验证码
+            if (!emailUtil.validateEmailCode(dto.getCode(), dto.getEmail())) {
+                throw new RuntimeException("验证码错误");
+            }
             boolean saved = this.save(users);
             if (!saved) {
                 throw new RuntimeException("用户创建失败!");
             }
 
             //将用户信息加入缓存
-//TODO：edisUtil.set这里设置的Key需要优化为UUID。一个用户的标识。
+            //TODO：edisUtil.set这里设置的Key需要优化为UUID。一个用户的标识。
             RedisUtil.set(USER_CACHE_KEY_PREFIX + users.getPhone(), users, USER_CACHE_DURATION);
-//            TODO:email验证码删除
-//            redisUtil.delete(VERIFICATION_CODE_KEY_PREFIX + RegisterUsersDto.getEmail());
-            emailUtil.sendEmailByCode(dto.getEmail());
+            //            TODO:email验证码删除
             //生成token并且返回
-//            return jwtUtil.generateToken(users);
-            return "注册成功";
+            Map<String, String> registerMap = new HashMap<>();
+            registerMap.put("token", jwtUtil.generateToken(users));
+            return registerMap;
         }
-//        如果用户存在直接抛出错误
+            //        如果用户存在直接抛出错误
 
         throw new RuntimeException("用户已存在");
     }
@@ -81,9 +85,6 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
                     return userDB;//不是吧
                 });
         log.info("————————————————————————————————{}", userRedis);
-        if (userRedis == null) {
-            throw new RuntimeException("用户不存在");
-        }
         RedisUtil.set(USER_CACHE_KEY_PREFIX + dto.getPhone(), userRedis, USER_CACHE_DURATION);
         Map<String, String> LoginMap = new HashMap<>();
         LoginMap.put("token", jwtUtil.generateToken(userRedis));
@@ -96,6 +97,17 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
         emailUtil.sendEmailByCode(email);
         }
 
+    /**
+     * 邮箱验证码验证
+     *
+     */
+    @Override
+    public boolean validateEmailCode(String code, String email) {
+        return emailUtil.validateEmailCode(code, email);
     }
+    }
+
+
+
 
 

@@ -1,5 +1,6 @@
 package com.example.afanguserbackend.utils;
 
+import jakarta.annotation.Resource;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +14,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 /**
@@ -28,7 +31,9 @@ public class EmailUtil {
     private final JavaMailSender mailSender;
     @Value("${spring.mail.username}")
     private String fromEmail;
-
+    @Resource
+    private RedisUtil redisUtil;
+    private static final Long EXPIRED_TIME = 5L;
 
     public EmailUtil(JavaMailSender mailSender) {
         this.mailSender = mailSender;
@@ -90,8 +95,25 @@ public class EmailUtil {
 //        我这里不加入5分钟内Redis用户已生成验证码验证和重复利用
         String code = getVerificationCode();
         String subject = "验证码";
-//        验证码过期+redis
-        String contentTemplate = getEmailTemplate(code, "5分钟", "templates/email-verification-code.html");
+        //        验证码过期+redis
+        RedisUtil.set(emailAdress, code, EXPIRED_TIME, TimeUnit.MINUTES);
+        String contentTemplate = getEmailTemplate(code, EXPIRED_TIME+"分钟", "templates/email-verification-code.html");
         sendVerificationCodeEmail(emailAdress, subject, contentTemplate);
     }
+    /**
+     * 邮箱验证码验证
+     */
+    public boolean validateEmailCode(String code, String email) {
+        // 验证码验证逻辑
+        //1、查redis
+        Optional<String> redisCode= RedisUtil.getString(email);
+        //2、验证code
+        if(redisCode.isPresent() && redisCode.get().equals(code)){
+            //3、验证通过删除redis
+            return RedisUtil.delete(email);
+        }
+        return false;
+
+    }
 }
+
