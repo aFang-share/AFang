@@ -5,7 +5,6 @@ import com.example.afanguserbackend.common.ResultUtils;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.LoginUserDto;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDto;
 import com.example.afanguserbackend.service.user.AuthUserService;
-import com.example.afanguserbackend.utils.PhoneUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -49,8 +48,8 @@ public class AuthUserController {
      * 手机验证码验证，手机验证码登录
      */
     @GetMapping("/validatePhoneCode")
-    public BaseResponse<Void> validatePhoneCode(@RequestParam String phone,@RequestParam String code) {
-        PhoneUtil.sendPhoneCode(phone,code,"5");
-        return ResultUtils.success();
+    public BaseResponse<String> validatePhoneCode(@RequestParam String phone) throws Exception {
+        authUserService.sendCodeByPhone(phone);
+        return  ResultUtils.success("验证成功，请前往登录");
     }
 }

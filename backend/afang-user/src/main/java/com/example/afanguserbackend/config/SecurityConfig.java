@@ -121,6 +121,6 @@ public class SecurityConfig {
             "/health/check",
             "/user/sendCodeByEmail",
             "user/validateEmailCode",
-            "user//validatePhoneCode"
+            "user/validatePhoneCode"
     );
 }

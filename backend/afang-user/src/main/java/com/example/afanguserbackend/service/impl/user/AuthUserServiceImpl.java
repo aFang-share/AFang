@@ -2,14 +2,13 @@ package com.example.afanguserbackend.service.impl.user;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.afanguserbackend.common.BaseResponse;
 import com.example.afanguserbackend.mapper.user.UsersMapper;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.LoginUserDto;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDto;
 import com.example.afanguserbackend.model.entity.user.Users;
 import com.example.afanguserbackend.service.user.AuthUserService;
-import com.example.afanguserbackend.utils.EmailUtil;
-import com.example.afanguserbackend.utils.JwtUtil;
-import com.example.afanguserbackend.utils.RedisUtil;
+import com.example.afanguserbackend.utils.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -20,6 +19,7 @@ import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.TimeUnit;
 
 
 @Service
@@ -42,30 +42,29 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
         log.info("接收信息{}", dto);
         Users users = new Users();
         Users user = baseMapper.selectOne(new QueryWrapper<Users>().eq("phone", dto.getPhone()));
-        if (user == null) {//            用户不存在
-            BeanUtils.copyProperties(dto, users);
-            users.setPassword(passwordEncoder.encode(dto.getPassword()));
-            //比对注册时的接收验证码
-            if (!emailUtil.validateEmailCode(dto.getCode(), dto.getEmail())) {
-                throw new RuntimeException("验证码错误");
-            }
-            boolean saved = this.save(users);
-            if (!saved) {
-                throw new RuntimeException("用户创建失败!");
-            }
-
-            //将用户信息加入缓存
-            //TODO：edisUtil.set这里设置的Key需要优化为UUID。一个用户的标识。
-            RedisUtil.set(USER_CACHE_KEY_PREFIX + users.getPhone(), users, USER_CACHE_DURATION);
-            //            TODO:email验证码删除
-            //生成token并且返回
-            Map<String, String> registerMap = new HashMap<>();
-            registerMap.put("token", jwtUtil.generateToken(users));
-            return registerMap;
-        }
+        if (user != null) {
             //        如果用户存在直接抛出错误
-
-        throw new RuntimeException("用户已存在");
+            throw new RuntimeException("用户已存在");
+        }
+        //            用户不存在
+        BeanUtils.copyProperties(dto, users);
+        users.setPassword(passwordEncoder.encode(dto.getPassword()));
+        //比对注册时的接收验证码
+        if (!CommonUtil.validateVerificationCode(dto.getCode(), dto.getEmail())) {
+            throw new RuntimeException("验证码错误");
+        }
+        boolean saved = this.save(users);
+        if (!saved) {
+            throw new RuntimeException("用户创建失败!");
+        }
+        //将用户信息加入缓存
+        //TODO：edisUtil.set这里设置的Key需要优化为UUID。一个用户的标识。
+        RedisUtil.set(USER_CACHE_KEY_PREFIX + users.getPhone(), users, USER_CACHE_DURATION);
+        //            TODO:email验证码删除
+        //生成token并且返回
+        Map<String, String> registerMap = new HashMap<>();
+        registerMap.put("token", jwtUtil.generateToken(users));
+        return registerMap;
     }
 
     @Override
@@ -103,7 +102,17 @@ public class AuthUserServiceImpl extends ServiceImpl<UsersMapper, Users> impleme
      */
     @Override
     public boolean validateEmailCode(String code, String email) {
-        return emailUtil.validateEmailCode(code, email);
+        return CommonUtil.validateVerificationCode(code, email);
+    }
+    /**
+     * 发送手机验证码
+     */
+    @Override
+    public Map<String, String> sendCodeByPhone(String phone) throws Exception {
+        String verificationCode = CommonUtil.getVerificationCode();
+        RedisUtil.set(VERIFICATION_CODE_KEY_PREFIX + phone, verificationCode, 5, TimeUnit.MINUTES);
+        PhoneUtil.sendPhoneCode(phone, verificationCode,"5");
+        return BaseResponse.success();
     }
     }
 

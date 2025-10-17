@@ -3,6 +3,7 @@ package com.example.afanguserbackend.common;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Map;
 
 /**
  * 通过响应类
@@ -24,4 +25,7 @@ public class BaseResponse<T> implements Serializable {
         this.message = message;
     }
 
+    public static Map<String, String> success() {
+        return null;
+    }
 }

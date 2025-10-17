@@ -22,5 +22,5 @@ public interface AuthUserService extends IService<Users> {
     Map<String, String> loginUsers(LoginUserDto dto);
     void sendCodeByEmail(String email)throws Exception;
     boolean validateEmailCode(String code, String email);
-
+    Map<String,String>sendCodeByPhone(String phone) throws Exception;
 }

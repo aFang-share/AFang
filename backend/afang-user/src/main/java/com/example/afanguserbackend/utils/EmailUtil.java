@@ -14,10 +14,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Optional;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
+
+import static com.example.afanguserbackend.utils.CommonUtil.getVerificationCode;
 
 /**
  * @Author: aFang
@@ -39,13 +39,6 @@ public class EmailUtil {
         this.mailSender = mailSender;
     }
 
-    /**
-     * 6位数字验证码生成
-     */
-    public String getVerificationCode() {
-
-        return Integer.toString(ThreadLocalRandom.current().nextInt(900000) + 100000);
-    }
 
     /**
      * 邮件模板加载
@@ -100,20 +93,6 @@ public class EmailUtil {
         String contentTemplate = getEmailTemplate(code, EXPIRED_TIME+"分钟", "templates/email-verification-code.html");
         sendVerificationCodeEmail(emailAdress, subject, contentTemplate);
     }
-    /**
-     * 邮箱验证码验证
-     */
-    public boolean validateEmailCode(String code, String email) {
-        // 验证码验证逻辑
-        //1、查redis
-        Optional<String> redisCode= RedisUtil.getString(email);
-        //2、验证code
-        if(redisCode.isPresent() && redisCode.get().equals(code)){
-            //3、验证通过删除redis
-            return RedisUtil.delete(email);
-        }
-        return false;
 
-    }
 }
 
