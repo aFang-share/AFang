@@ -1,4 +1,4 @@
-package com.example.afanguserbackend.exception.service;
+package com.example.afanguserbackend.exception;
 
 import com.example.afanguserbackend.common.BaseResponse;
 import com.example.afanguserbackend.common.ResultUtils;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 @Slf4j
 
-public class GlobalExceptionHandle {
+public class GlobalExceptionHandler {
     //处理异常
     @ExceptionHandler(RuntimeException.class)
     public BaseResponse<String> handleException(RuntimeException e) {
@@ -26,6 +26,7 @@ public class GlobalExceptionHandle {
         return ResultUtils.fail(e.getMessage());
 
     }
+
 }
 //网络IO
 //数据库

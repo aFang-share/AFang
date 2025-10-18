@@ -164,8 +164,23 @@
             <version>4.5</version>
             <scope>test</scope>
         </dependency>
-
-    </dependencies>
+<!--        spring 参数校验-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <!--无法完成功能-->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+        </dependency>
+        <!--可以完成参数校验功能-->
+        <!--spring-boot-starter-validation 引入了这个依赖-->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+        </dependencies>
 
     <build>
         <plugins>

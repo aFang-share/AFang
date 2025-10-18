@@ -5,6 +5,7 @@ import com.example.afanguserbackend.common.ResultUtils;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.LoginUserDto;
 import com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDto;
 import com.example.afanguserbackend.service.user.AuthUserService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
@@ -20,13 +21,13 @@ public class AuthUserController {
     private final AuthUserService authUserService;
 
     @PostMapping("/registerUser")
-    public BaseResponse<Map<String,String>> registerUser(@RequestBody RegisterUsersDto registerUsersDto) throws Exception {
+    public BaseResponse<Map<String,String>> registerUser(@Valid @RequestBody RegisterUsersDto registerUsersDto) throws Exception {
         //使用自定义返回,返回
         return ResultUtils.success(authUserService.registerUsers(registerUsersDto));
     }
 
     @PostMapping("/loginUser")
-    public BaseResponse<Map<String, String>> loginUser(@RequestBody LoginUserDto loginUserDto) {
+    public BaseResponse<Map<String, String>> loginUser(@Valid @RequestBody LoginUserDto loginUserDto) {
         return ResultUtils.success(authUserService.loginUsers(loginUserDto));
     }
 
