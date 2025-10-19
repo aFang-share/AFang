@@ -1,499 +1,84 @@
-2025-10-18 23:06:03 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-18 23:06:03 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 21720 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-18 23:06:03 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-18 23:06:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-18 23:06:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-18 23:06:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 50 ms. Found 0 Redis repository interfaces.
-2025-10-18 23:06:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-18 23:06:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-18 23:06:06 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-18 23:06:06 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-18 23:06:06 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-18 23:06:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3128 ms
-2025-10-18 23:06:08 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-18 23:06:08 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-18 23:06:08 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-18 23:06:08 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-18 23:06:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-18 23:06:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-18 23:06:08 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 6.366 seconds (process running for 8.116)
-2025-10-18 23:07:07 [http-nio-9999-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-18 23:07:07 [http-nio-9999-exec-2] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-18 23:07:07 [http-nio-9999-exec-2] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 2 ms
-2025-10-18 23:07:08 [http-nio-9999-exec-2] ERROR c.e.a.e.s.GlobalExceptionHandle [GlobalExceptionHandle.java:25] - 系统异常
-org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.afanguserbackend.common.BaseResponse<java.util.Map<java.lang.String, java.lang.String>> com.example.afanguserbackend.controller.AuthUserController.registerUser(com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDto) throws java.lang.Exception: [Field error in object 'registerUsersDto' on field 'email': rejected value [3111659946@qq.com]; codes [Email.registerUsersDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUsersDto.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@1f1f0e0f,^1[3-9]\d{9}$]; default message [邮箱格式不正确]] 
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:159)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:79)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-10-18 23:44:45 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-18 23:44:45 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-18 23:45:00 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-18 23:45:00 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 60288 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-18 23:45:00 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-18 23:45:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-18 23:45:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-18 23:45:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
-2025-10-18 23:45:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-18 23:45:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-18 23:45:02 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-18 23:45:02 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-18 23:45:02 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-18 23:45:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2429 ms
-2025-10-18 23:45:04 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-18 23:45:04 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-18 23:45:04 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-18 23:45:04 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-18 23:45:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-18 23:45:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-18 23:45:05 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.442 seconds (process running for 6.956)
-2025-10-18 23:45:28 [http-nio-9999-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-18 23:45:28 [http-nio-9999-exec-2] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-18 23:45:28 [http-nio-9999-exec-2] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 1 ms
-2025-10-18 23:45:28 [http-nio-9999-exec-2] ERROR c.e.a.e.GlobalExceptionHandler [GlobalExceptionHandler.java:25] - 系统异常
-org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.example.afanguserbackend.common.BaseResponse<java.util.Map<java.lang.String, java.lang.String>> com.example.afanguserbackend.controller.AuthUserController.registerUser(com.example.afanguserbackend.model.dto.user.auth_user_dto.RegisterUsersDto) throws java.lang.Exception: [Field error in object 'registerUsersDto' on field 'email': rejected value [3111659946@qq.com]; codes [Email.registerUsersDto.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerUsersDto.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@13d9ad97,^1[3-9]\d{9}$]; default message [邮箱格式不正确]] 
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:159)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:79)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-10-18 23:50:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-18 23:50:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-18 23:51:07 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-18 23:51:07 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 55312 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-18 23:51:07 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-18 23:51:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-18 23:51:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-18 23:51:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
-2025-10-18 23:51:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-18 23:51:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-18 23:51:10 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-18 23:51:10 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-18 23:51:10 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-18 23:51:10 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2391 ms
-2025-10-18 23:51:12 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-18 23:51:12 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-18 23:51:12 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-18 23:51:12 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-18 23:51:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-18 23:51:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-18 23:51:12 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.709 seconds (process running for 7.127)
-2025-10-18 23:51:13 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-18 23:51:13 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-18 23:51:13 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
-2025-10-18 23:51:13 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-18 23:51:13 [http-nio-9999-exec-1] INFO  c.e.a.s.i.user.AuthUserServiceImpl [AuthUserServiceImpl.java:42] - 接收信息RegisterUsersDto(username=t111, password=13, code=974694, email=3111659946@qq.com, phone=6111)
-2025-10-18 23:51:13 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@1433c77a
-2025-10-18 23:51:13 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-18 23:51:14 [http-nio-9999-exec-1] ERROR c.e.a.e.GlobalExceptionHandler [GlobalExceptionHandler.java:18] - 系统异常
-java.lang.RuntimeException: 验证码错误
-	at com.example.afanguserbackend.service.impl.user.AuthUserServiceImpl.registerUsers(AuthUserServiceImpl.java:54)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:724)
-	at com.example.afanguserbackend.service.impl.user.AuthUserServiceImpl$$SpringCGLIB$$0.registerUsers(<generated>)
-	at com.example.afanguserbackend.controller.AuthUserController.registerUser(AuthUserController.java:26)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
-	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
-	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:79)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
-	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
-	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
-	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-10-18 23:53:44 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-18 23:53:44 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-18 23:53:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-18 23:53:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-20 00:20:25 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-20 00:20:25 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:53] - Starting AfangUserBackendApplicationTests using Java 21.0.8 with PID 33228 (started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-20 00:20:25 [main] INFO  c.e.a.AfangUserBackendApplicationTests [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 00:20:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-20 00:20:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-20 00:20:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 55 ms. Found 0 Redis repository interfaces.
+2025-10-20 00:20:30 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-20 00:20:30 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-20 00:20:31 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:20:31 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:20:32 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:59] - Started AfangUserBackendApplicationTests in 7.535 seconds (process running for 9.234)
+2025-10-20 00:20:36 [main] INFO  c.e.afanguserbackend.utils.EmailUtil [EmailUtil.java:75] - 验证邮件发送成功，收件人：3111659946@qq.com
+2025-10-20 00:27:58 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-20 00:27:58 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:53] - Starting AfangUserBackendApplicationTests using Java 21.0.8 with PID 21808 (started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-20 00:27:58 [main] INFO  c.e.a.AfangUserBackendApplicationTests [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 00:28:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-20 00:28:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-20 00:28:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+2025-10-20 00:28:04 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-20 00:28:04 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-20 00:28:04 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:28:04 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:28:05 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:59] - Started AfangUserBackendApplicationTests in 8.415 seconds (process running for 10.093)
+2025-10-20 00:28:09 [main] INFO  c.e.afanguserbackend.utils.EmailUtil [EmailUtil.java:75] - 验证邮件发送成功，收件人：3111659946@qq.com
+2025-10-20 00:34:39 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-20 00:34:39 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 33088 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-20 00:34:39 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 00:34:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-20 00:34:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-20 00:34:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2025-10-20 00:34:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-20 00:34:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-20 00:34:41 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-20 00:34:41 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20 00:34:41 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-20 00:34:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2327 ms
+2025-10-20 00:34:43 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-20 00:34:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-20 00:34:43 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:34:43 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:34:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-20 00:34:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-20 00:34:44 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.398 seconds (process running for 6.371)
+2025-10-20 00:34:44 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20 00:34:44 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-20 00:34:44 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-20 00:34:44 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-20 00:34:44 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@136725b0
+2025-10-20 00:34:44 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-20 00:35:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20 00:35:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-20 00:35:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-20 00:35:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-20 00:40:03 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-20 00:40:03 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 34344 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-20 00:40:03 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 00:40:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-20 00:40:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-20 00:40:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+2025-10-20 00:40:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-20 00:40:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-20 00:40:06 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-20 00:40:06 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-20 00:40:06 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-20 00:40:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2291 ms
+2025-10-20 00:40:07 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-20 00:40:07 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-20 00:40:07 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:40:07 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-10-20 00:40:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-20 00:40:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-20 00:40:08 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.336 seconds (process running for 6.297)
+2025-10-20 00:40:09 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-20 00:40:09 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-20 00:40:09 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-20 00:40:09 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-20 00:40:09 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@45acc922
+2025-10-20 00:40:09 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-20 00:43:08 [http-nio-9999-exec-9] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 649 ms
+2025-10-20 00:44:55 [http-nio-9999-exec-3] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 313 ms
+2025-10-20 00:46:20 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20 00:46:20 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-20 00:46:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-20 00:46:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.

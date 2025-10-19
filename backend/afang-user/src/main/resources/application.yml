@@ -58,3 +58,13 @@ logging:
   level:
     org.springframework: info
     org.mybatis: info
+
+#openapi document
+springdoc:
+  api-docs:
+    path: /public/api-docs
+    enabled: true
+  swagger-ui:
+    path: /public/swagger-ui.html
+    enabled: true
+  enable-javadoc: true

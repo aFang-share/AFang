@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-//控制器接受请求发送结果
+/**
+ * 接受请求发送结果
+ */
+
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
