@@ -13,26 +13,30 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 /**
- * REST controller for handling user-related operations
- * Provides endpoints for user management functionality
+ * 用户管理控制器
+ * 提供用户信息更新等普通业务操作的API接口
+ *
+ * @author AFang Team
+ * @version 1.0
+ * @since 2024-01-01
  */
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
 @Slf4j
-/**
- * 用户普通业务
- */
 public class CommonUserController {
+
     /**
-     * 注入CommonUserService
+     * 用户业务服务接口
      */
     private final CommonUserService commonUserService;
 
     /**
-     * 更新用户信息
-     * @param updateUsersDto
-     * @return BaseResponse<Void>
+     * 更新用户信息接口
+     * 根据提供的用户信息更新对应用户的数据
+     *
+     * @param updateUsersDto 用户更新信息，包含需要更新的字段
+     * @return 更新操作结果，成功返回空数据，失败返回错误信息
      */
     @PostMapping("/updateUser")
     public BaseResponse<Void> update(@RequestBody UpdateUsersDto updateUsersDto) {

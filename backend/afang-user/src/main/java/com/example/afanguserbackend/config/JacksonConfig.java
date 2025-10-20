@@ -19,14 +19,22 @@ import java.time.format.DateTimeFormatter;
 import java.util.TimeZone;
 
 /**
- * Spring MVC Json 配置
+ * Jackson JSON配置类
+ * 配置JSON序列化和反序列化规则，包括时间格式、精度处理等
+ *
+ * @author AFang Team
+ * @version 1.0
+ * @since 2024-01-01
  */
-//@JsonComponent
-    @Configuration
+@Configuration
 public class JacksonConfig {
 
     /**
-     * 添加 Long 转 json 精度丢失的配置
+     * 自定义ObjectMapper Bean
+     * 配置JSON序列化和反序列化的详细规则
+     *
+     * @param builder Jackson2对象映射构建器
+     * @return 配置好的ObjectMapper实例
      */
     @Bean
     public ObjectMapper jacksonObjectMapper(Jackson2ObjectMapperBuilder builder) {
@@ -40,26 +48,28 @@ public class JacksonConfig {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        // 注册 Java 8 时间模块
+        // 注册 Java 8 时间模块，支持LocalDateTime和LocalDate的序列化
         JavaTimeModule timeModule = new JavaTimeModule();
 
-        // 配置 LocalDateTime 格式化
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        // 配置时间格式化规则
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-        timeModule.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer(dtf));
-        timeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(dtf));
+        // 配置LocalDateTime的序列化和反序列化
+        timeModule.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer(dateTimeFormatter));
+        timeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(dateTimeFormatter));
 
-        timeModule.addSerializer(LocalDate.class, new LocalDateSerializer(df));
-        timeModule.addDeserializer(LocalDate.class, new LocalDateDeserializer(df));
+        // 配置LocalDate的序列化和反序列化
+        timeModule.addSerializer(LocalDate.class, new LocalDateSerializer(dateFormatter));
+        timeModule.addDeserializer(LocalDate.class, new LocalDateDeserializer(dateFormatter));
 
         mapper.registerModule(timeModule);
 
-        // 通用配置
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        mapper.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai"));
+        // 配置序列化策略
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); // 忽略null值
+        mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS); // 禁用时间戳格式
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false); // 忽略未知属性
+        mapper.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai")); // 设置时区为东八区
 
         return mapper;
 

@@ -6,30 +6,41 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-//全局异常注解
+/**
+ * 全局异常处理器
+ * 统一处理应用程序中抛出的各种异常，返回标准化的错误响应
+ *
+ * @author AFang Team
+ * @version 1.0
+ * @since 2024-01-01
+ */
 @RestControllerAdvice
 @Slf4j
-
 public class GlobalExceptionHandler {
-    //处理异常
+
+    /**
+     * 处理运行时异常
+     * 捕获所有RuntimeException及其子类异常
+     *
+     * @param e 运行时异常对象
+     * @return 包含错误信息的响应对象
+     */
     @ExceptionHandler(RuntimeException.class)
-    public BaseResponse<String> handleException(RuntimeException e) {
-        //返回错误信息
-        log.error("系统异常", e);
+    public BaseResponse<String> handleRuntimeException(RuntimeException e) {
+        log.error("运行时异常：{}", e.getMessage(), e);
         return ResultUtils.fail(e.getMessage());
     }
 
+    /**
+     * 处理通用异常
+     * 捕获所有Exception及其子类异常，作为兜底处理
+     *
+     * @param e 异常对象
+     * @return 包含错误信息的响应对象
+     */
     @ExceptionHandler(Exception.class)
     public BaseResponse<String> handleException(Exception e) {
-        //返回错误信息
-        log.error("系统异常", e);
+        log.error("系统异常：{}", e.getMessage(), e);
         return ResultUtils.fail(e.getMessage());
-
     }
-
 }
-//网络IO
-//数据库
-//业务逻辑
-//其他
-//磁盘

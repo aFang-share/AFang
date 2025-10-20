@@ -332,3 +332,7 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 2025-10-20 20:19:24 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4cb595e3
 2025-10-20 20:19:24 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
 2025-10-20 20:19:52 [http-nio-9999-exec-9] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 537 ms
+2025-10-20 23:47:46 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-20 23:47:46 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-20 23:47:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-20 23:47:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.

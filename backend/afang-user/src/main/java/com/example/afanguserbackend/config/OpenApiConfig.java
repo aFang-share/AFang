@@ -12,21 +12,41 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * OpenAPI配置类
+ * 配置Swagger/OpenAPI文档生成，提供API文档界面
+ *
+ * @author AFang Team
+ * @version 1.0
+ * @since 2024-01-01
+ */
 @Configuration
 public class OpenApiConfig {
 
+    /**
+     * 自定义OpenAPI配置
+     * 配置API文档的基本信息，如标题、版本、描述等
+     *
+     * @return 配置好的OpenAPI实例
+     */
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("File Transfers API")
+                        .title("AFang用户管理 API")
                         .version("1.0")
-                        .description("API documentation for File Transfers application")
+                        .description("AFang用户管理系统API文档，提供用户注册、登录、信息管理等功能")
                         .contact(new Contact()
-                                .name("Development Team")
-                                .email("dev@example.com")));
+                                .name("AFang开发团队")
+                                .email("dev@afang.com")));
     }
 
+    /**
+     * OpenAPI自定义器
+     * 用于自定义API文档的展示格式和内容
+     *
+     * @return OpenAPI自定义器实例
+     */
     @Bean
     public OpenApiCustomizer openApiCustomizer() {
         return openApi -> {
@@ -37,7 +57,7 @@ public class OpenApiConfig {
                             .collect(Collectors.toMap(Tag::getName, Tag::getDescription)) :
                     Map.of();
 
-            // 处理每个路径的操作
+            // 处理每个路径的操作，优化tag显示
             if (openApi.getPaths() != null) {
                 openApi.getPaths().forEach((path, pathItem) ->
                         pathItem.readOperations().forEach(operation -> {
