@@ -17,6 +17,21 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @TableName("users")
+
+/**
+ * 用户实体类
+ * @param id 用户id
+ * @param username 用户名
+ * @param password 密码
+ * @param email 邮箱
+ * @param phone 手机号
+ * @param avatar 头像
+ * @param userRole 用户角色
+ * @param status 用户状态
+ * @createTime 创建时间
+ * @updateTime 更新时间
+ *
+ */
 public class Users implements Serializable {
     //    序列化
     @Serial

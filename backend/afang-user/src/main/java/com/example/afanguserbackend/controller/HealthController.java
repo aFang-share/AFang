@@ -10,8 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 //@RequestMapping注解用于指定该控制器的请求路径
 @RequestMapping("/health")
 @Slf4j
+/**
+ * 健康检查控制器
+ */
 public class HealthController {
-
+/**
+ * 健康检查方法
+ *
+ * @return String
+ */
     @GetMapping("/check")
     public String healthCheck() {
 //        log.trace("TRACE 级别日志");//日志级别从低到高：TRACE < DEBUG < INFO < WARN < ERROR

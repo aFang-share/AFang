@@ -12,6 +12,15 @@ import lombok.NoArgsConstructor;
 //使用Lombook 注解，添加无参构造函数。
 @NoArgsConstructor
 @AllArgsConstructor
+/**
+ * 用户注册数据传输对象
+ * @param username 用户名
+ * @param password 密码
+ * @param code 邮箱验证码
+ * @param email 邮箱
+ * @param phone 手机号
+ *
+ */
 public class RegisterUsersDto {
     private String username;
     @NotBlank(message = "密码不能为空")

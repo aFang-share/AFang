@@ -9,6 +9,18 @@ import java.time.LocalDateTime;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+/**
+ * 用户信息
+ * @param username 用户名
+ * @param password 密码
+ * @param email 邮箱
+ * @param phone 手机号
+ * @param avatar 头像
+ * @param status 用户状态
+ * @param userRole 用户角色
+ * @param createTime 创建时间
+ * @param updateTime 更新时间
+ */
 public class UserVo {
     private String username;
     private String password;

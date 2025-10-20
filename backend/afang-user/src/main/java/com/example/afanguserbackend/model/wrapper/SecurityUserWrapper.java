@@ -9,6 +9,9 @@ import java.util.Collection;
 import java.util.List;
 
 @Data
+/**
+ * 封装用户信息
+ */
 public class SecurityUserWrapper implements UserDetails {
 
 
