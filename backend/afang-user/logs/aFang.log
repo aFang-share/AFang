@@ -1149,3 +1149,863 @@ org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-1
 2025-10-22 00:22:38 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
 2025-10-22 00:22:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
 2025-10-22 00:22:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:22:44 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 00:22:44 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 11180 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 00:22:44 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 00:22:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 00:22:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 00:22:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 50 ms. Found 0 Redis repository interfaces.
+2025-10-22 00:22:48 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 00:22:48 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:22:48 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 00:22:48 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 00:22:49 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 00:22:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3761 ms
+2025-10-22 00:22:51 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 00:22:51 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 00:22:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:22:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 00:22:52 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 8.33 seconds (process running for 9.784)
+2025-10-22 00:22:52 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 00:22:52 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 00:22:52 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 00:22:52 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-22 00:22:53 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@3fe378a0
+2025-10-22 00:22:53 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 00:22:57 [http-nio-9999-exec-3] INFO  c.e.a.controller.ai.AiController [AiController.java:42] - 收到AI聊天请求，消息长度: 2
+2025-10-22 00:23:04 [http-nio-9999-exec-3] INFO  c.e.a.controller.ai.AiController [AiController.java:47] - AI回复生成成功，回复长度: 63
+2025-10-22 00:45:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 00:45:18 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 00:45:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 00:45:18 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:45:29 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 00:45:29 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 19008 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 00:45:29 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 00:45:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 00:45:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 00:45:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+2025-10-22 00:45:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 00:45:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:45:32 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 00:45:32 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 00:45:33 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 00:45:33 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3068 ms
+2025-10-22 00:45:35 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 00:45:35 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 00:45:36 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:45:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 00:45:36 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 7.562 seconds (process running for 9.326)
+2025-10-22 00:45:54 [http-nio-9999-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 00:45:54 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 00:45:54 [http-nio-9999-exec-1] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 2 ms
+2025-10-22 00:45:55 [http-nio-9999-exec-1] INFO  c.e.a.controller.ai.AiController [AiController.java:84] - 收到AI流式聊天请求，消息长度: 2
+2025-10-22 00:45:56 [ForkJoinPool.commonPool-worker-1] ERROR c.e.a.controller.ai.AiController [AiController.java:94] - 流式聊天错误: The mapper [com.example.afanguserbackend.controller.ai.AiController$$Lambda/0x000002c3cda76168] returned a null value.
+2025-10-22 00:45:56 [http-nio-9999-exec-3] ERROR c.e.a.e.GlobalExceptionHandler [GlobalExceptionHandler.java:30] - 运行时异常：The mapper [com.example.afanguserbackend.controller.ai.AiController$$Lambda/0x000002c3cda76168] returned a null value.
+java.lang.NullPointerException: The mapper [com.example.afanguserbackend.controller.ai.AiController$$Lambda/0x000002c3cda76168] returned a null value.
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:492)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:424)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxBuffer$BufferOverlappingSubscriber.onNext(FluxBuffer.java:509)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onNext(FluxSwitchMapNoPrefetch.java:408)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2570)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onSubscribe(FluxSwitchMapNoPrefetch.java:378)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.subscribeInner(FluxSwitchMapNoPrefetch.java:219)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.onNext(FluxSwitchMapNoPrefetch.java:193)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2096)
+	at reactor.core.publisher.MonoReduceSeed$ReduceSeedSubscriber.onComplete(MonoReduceSeed.java:163)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.checkTerminated(FluxWindowPredicate.java:768)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.drainRegular(FluxWindowPredicate.java:662)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.drain(FluxWindowPredicate.java:748)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.onComplete(FluxWindowPredicate.java:814)
+	at reactor.core.publisher.FluxWindowPredicate$WindowPredicateMain.onNext(FluxWindowPredicate.java:243)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113)
+	at reactor.core.publisher.FluxTakeUntil$TakeUntilPredicateSubscriber.onNext(FluxTakeUntil.java:95)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865)
+	at reactor.core.publisher.FluxConcatMap$WeakScalarSubscription.request(FluxConcatMap.java:480)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2366)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:202)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.onNextNewBuffer(FluxBufferPredicate.java:317)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.tryOnNext(FluxBufferPredicate.java:227)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.onNext(FluxBufferPredicate.java:200)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:453)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:256)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:571)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.onNext(FluxPublish.java:310)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:453)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:256)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onNext(JdkFlowAdapter.java:150)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.onNext(ResponseSubscribers.java:1028)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.onNext(ResponseSubscribers.java:868)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.onNext(HttpBodySubscriberWrapper.java:391)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.onNext(HttpBodySubscriberWrapper.java:49)
+	at java.net.http/jdk.internal.net.http.Stream.schedule(Stream.java:229)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.common.SubscriptionBase.request(SubscriptionBase.java:64)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper$SubscriptionWrapper.request(HttpBodySubscriberWrapper.java:85)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber$SubscriptionRef.request(ResponseSubscribers.java:921)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.request(JdkFlowAdapter.java:165)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onSubscribe(FluxFlattenIterable.java:241)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onSubscribe(JdkFlowAdapter.java:145)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber$SubscriptionRef.subscribe(ResponseSubscribers.java:933)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:982)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2214)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:979)
+	at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+	at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891)
+	at org.springframework.http.client.reactive.AbstractClientHttpResponse$SingleSubscriberPublisher.subscribe(AbstractClientHttpResponse.java:112)
+	at reactor.core.publisher.FluxSource.subscribe(FluxSource.java:71)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891)
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:238)
+	at reactor.core.publisher.FluxConcatArray.subscribe(FluxConcatArray.java:79)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+	at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+2025-10-22 01:18:38 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:18:38 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 55132 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:18:38 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:18:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:18:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:18:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:18:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:18:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:18:41 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:18:41 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:18:41 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:18:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3342 ms
+2025-10-22 01:18:44 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:18:44 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:18:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:18:45 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:635] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-10-22 01:18:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-22 01:18:45 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+2025-10-22 01:18:46 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 01:18:46 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 01:18:59 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:18:59 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 30252 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:18:59 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:19:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:19:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:19:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:19:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:19:02 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:19:02 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:19:02 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:19:02 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:19:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2912 ms
+2025-10-22 01:19:05 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:19:05 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:19:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:19:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 01:19:06 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 7.25 seconds (process running for 8.489)
+2025-10-22 01:19:06 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 01:19:06 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 01:19:06 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 12 ms
+2025-10-22 01:19:06 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 01:19:06 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@12374f08
+2025-10-22 01:19:06 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 01:19:19 [http-nio-9999-exec-1] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 649 ms
+2025-10-22 01:22:12 [http-nio-9999-exec-10] ERROR c.e.a.e.GlobalExceptionHandler [GlobalExceptionHandler.java:30] - 运行时异常：The mapper [com.example.afanguserbackend.controller.ai.AiController$$Lambda/0x000002468cc2a030] returned a null value.
+java.lang.NullPointerException: The mapper [com.example.afanguserbackend.controller.ai.AiController$$Lambda/0x000002468cc2a030] returned a null value.
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:210)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmitScalar(FluxFlatMap.java:492)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.onNext(FluxFlatMap.java:424)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxBuffer$BufferOverlappingSubscriber.onNext(FluxBuffer.java:509)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onNext(FluxSwitchMapNoPrefetch.java:408)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2570)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:171)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapInner.onSubscribe(FluxSwitchMapNoPrefetch.java:378)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:96)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:55)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.subscribeInner(FluxSwitchMapNoPrefetch.java:219)
+	at reactor.core.publisher.FluxSwitchMapNoPrefetch$SwitchMapMain.onNext(FluxSwitchMapNoPrefetch.java:193)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxFlatMap$FlatMapMain.tryEmit(FluxFlatMap.java:547)
+	at reactor.core.publisher.FluxFlatMap$FlatMapInner.onNext(FluxFlatMap.java:988)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2096)
+	at reactor.core.publisher.MonoReduceSeed$ReduceSeedSubscriber.onComplete(MonoReduceSeed.java:163)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.checkTerminated(FluxWindowPredicate.java:768)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.drainRegular(FluxWindowPredicate.java:662)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.drain(FluxWindowPredicate.java:748)
+	at reactor.core.publisher.FluxWindowPredicate$WindowFlux.onComplete(FluxWindowPredicate.java:814)
+	at reactor.core.publisher.FluxWindowPredicate$WindowPredicateMain.onNext(FluxWindowPredicate.java:243)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxFilter$FilterSubscriber.onNext(FluxFilter.java:113)
+	at reactor.core.publisher.FluxTakeUntil$TakeUntilPredicateSubscriber.onNext(FluxTakeUntil.java:95)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onNext(MonoFlatMapMany.java:251)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:259)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:865)
+	at reactor.core.publisher.FluxConcatMap$WeakScalarSubscription.request(FluxConcatMap.java:480)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2366)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:202)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.onNextNewBuffer(FluxBufferPredicate.java:317)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.tryOnNext(FluxBufferPredicate.java:227)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.onNext(FluxBufferPredicate.java:200)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:503)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onNext(FluxConcatArray.java:180)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:453)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:256)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:571)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.onNext(FluxPublish.java:310)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:453)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onNext(FluxFlattenIterable.java:256)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onNext(JdkFlowAdapter.java:150)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.onNext(ResponseSubscribers.java:1028)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.onNext(ResponseSubscribers.java:868)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.onNext(HttpBodySubscriberWrapper.java:391)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.onNext(HttpBodySubscriberWrapper.java:49)
+	at java.net.http/jdk.internal.net.http.Stream.schedule(Stream.java:229)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.common.SubscriptionBase.request(SubscriptionBase.java:64)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper$SubscriptionWrapper.request(HttpBodySubscriberWrapper.java:85)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber$SubscriptionRef.request(ResponseSubscribers.java:921)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.request(JdkFlowAdapter.java:165)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onSubscribe(FluxFlattenIterable.java:241)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onSubscribe(JdkFlowAdapter.java:145)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber$SubscriptionRef.subscribe(ResponseSubscribers.java:933)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$subscribe$3(ResponseSubscribers.java:982)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2214)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.subscribe(ResponseSubscribers.java:979)
+	at reactor.adapter.JdkFlowAdapter$FlowPublisherAsFlux.subscribe(JdkFlowAdapter.java:68)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.core.publisher.FluxPublish.connect(FluxPublish.java:106)
+	at reactor.core.publisher.FluxAutoConnect.subscribe(FluxAutoConnect.java:62)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891)
+	at org.springframework.http.client.reactive.AbstractClientHttpResponse$SingleSubscriberPublisher.subscribe(AbstractClientHttpResponse.java:112)
+	at reactor.core.publisher.FluxSource.subscribe(FluxSource.java:71)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891)
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onComplete(FluxConcatArray.java:238)
+	at reactor.core.publisher.FluxConcatArray.subscribe(FluxConcatArray.java:79)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8891)
+	at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onNext(MonoFlatMapMany.java:196)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onNext(FluxPeek.java:200)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.complete(MonoIgnoreThen.java:294)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onNext(MonoIgnoreThen.java:188)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:121)
+	at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+2025-10-22 01:25:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 01:25:16 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 01:25:16 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 01:25:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 01:25:49 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:25:49 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 49760 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:25:49 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:25:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:25:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:25:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:25:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:25:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:25:52 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:25:52 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:25:52 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:25:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3587 ms
+2025-10-22 01:25:55 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:25:55 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:25:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:25:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 01:25:56 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 8.905 seconds (process running for 10.62)
+2025-10-22 01:25:57 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 01:25:57 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 01:25:57 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 5 ms
+2025-10-22 01:25:57 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 01:25:57 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@7dedd467
+2025-10-22 01:25:57 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 01:30:03 [HttpClient-2-Worker-2] ERROR o.s.ai.chat.model.MessageAggregator [MessageAggregator.java:171] - Aggregation Error
+org.springframework.web.reactive.function.client.WebClientResponseException: 200 OK from POST https://open.bigmodel.cn/api/paas/v4/chat/completions, but response failed with cause: java.net.SocketException: Connection reset
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:337)
+	at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onError(FluxOnErrorReturn.java:199)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onError(FluxDefaultIfEmpty.java:156)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onError(FluxOnAssembly.java:544)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onError(FluxMapFuseable.java:142)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onError(FluxMapFuseable.java:340)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onError(FluxFilterFuseable.java:382)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onError(MonoCollect.java:135)
+	at org.springframework.http.client.reactive.AbstractClientHttpResponse$SingleSubscriberPublisher.subscribe(AbstractClientHttpResponse.java:116)
+	at reactor.core.publisher.FluxSource.subscribe(FluxSource.java:71)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onError(FluxOnAssembly.java:544)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onError(FluxConcatMapNoPrefetch.java:221)
+	at reactor.core.publisher.FluxBufferPredicate$BufferPredicateSubscriber.onError(FluxBufferPredicate.java:346)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onError(FluxPeekFuseable.java:553)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onError(FluxMapFuseable.java:340)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onError(FluxDoFinally.java:119)
+	at reactor.core.publisher.FluxConcatArray$ConcatArraySubscriber.onError(FluxConcatArray.java:186)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:351)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onError(FluxFlattenIterable.java:263)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.checkTerminated(FluxPublish.java:625)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.drain(FluxPublish.java:494)
+	at reactor.core.publisher.FluxPublish$PublishSubscriber.onError(FluxPublish.java:336)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onError(FluxMapFuseable.java:340)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drainAsync(FluxFlattenIterable.java:351)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.drain(FluxFlattenIterable.java:724)
+	at reactor.core.publisher.FluxFlattenIterable$FlattenIterableSubscriber.onError(FluxFlattenIterable.java:263)
+	at reactor.adapter.JdkFlowAdapter$SubscriberToRS.onError(JdkFlowAdapter.java:155)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.complete(ResponseSubscribers.java:960)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$1(ResponseSubscribers.java:886)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:757)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAccept(CompletableFuture.java:2214)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.lambda$new$2(ResponseSubscribers.java:886)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.signalError(ResponseSubscribers.java:968)
+	at java.net.http/jdk.internal.net.http.ResponseSubscribers$PublishingBodySubscriber.onError(ResponseSubscribers.java:1044)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.propagateError(HttpBodySubscriberWrapper.java:171)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.complete(HttpBodySubscriberWrapper.java:310)
+	at java.net.http/jdk.internal.net.http.common.HttpBodySubscriberWrapper.onError(HttpBodySubscriberWrapper.java:396)
+	at java.net.http/jdk.internal.net.http.Stream.schedule(Stream.java:267)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.Stream.cancelImpl(Stream.java:1521)
+	at java.net.http/jdk.internal.net.http.Stream.cancelImpl(Stream.java:1492)
+	at java.net.http/jdk.internal.net.http.Stream.connectionClosing(Stream.java:1487)
+	at java.net.http/jdk.internal.net.http.Http2Connection.shutdown(Http2Connection.java:895)
+	at java.net.http/jdk.internal.net.http.Http2Connection$Http2TubeSubscriber.processQueue(Http2Connection.java:1831)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Body from POST https://open.bigmodel.cn/api/paas/v4/chat/completions [DefaultClientResponse]
+Original Stack Trace:
+		at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+		at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+		at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+		at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+		at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+		at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+		at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+		at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+		at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+		at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+		at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+		at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1477)
+		at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1422)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1422)
+2025-10-22 01:30:03 [ForkJoinPool.commonPool-worker-2] ERROR o.s.ai.chat.model.MessageAggregator [MessageAggregator.java:171] - Aggregation Error
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection reset
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST https://open.bigmodel.cn/api/paas/v4/chat/completions [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onError(FluxMap.java:134)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:115)
+		at reactor.core.publisher.MonoCompletionStage$MonoCompletionStageSubscription.apply(MonoCompletionStage.java:67)
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+		at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+		at java.base/java.util.concurrent.CompletableFuture.postFire(CompletableFuture.java:614)
+		at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:844)
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Body from POST https://open.bigmodel.cn/api/paas/v4/chat/completions [DefaultClientResponse]
+Original Stack Trace:
+		at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+		at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+		at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
+		at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
+		at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+		at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+		at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+		at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+		at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+		at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+		at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+		at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1477)
+		at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1422)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1422)
+2025-10-22 01:40:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 01:40:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 01:40:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 01:40:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 01:41:08 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:41:08 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 44600 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:41:08 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:41:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:41:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:41:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 53 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:41:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:41:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:41:13 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:41:13 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:41:13 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:41:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 4056 ms
+2025-10-22 01:41:16 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:41:16 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:41:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:41:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 01:41:17 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 9.675 seconds (process running for 11.634)
+2025-10-22 01:41:17 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 01:41:17 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 01:41:17 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 01:41:17 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-22 01:41:18 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@1d8c9902
+2025-10-22 01:41:18 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 01:53:32 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 01:53:33 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 01:53:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 01:53:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 01:53:43 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:53:43 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 16804 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:53:43 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:53:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:53:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:53:46 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:53:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:53:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:53:47 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:53:47 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:53:47 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:53:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3596 ms
+2025-10-22 01:53:50 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:53:50 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:53:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:53:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 01:53:51 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 8.639 seconds (process running for 10.245)
+2025-10-22 01:55:11 [http-nio-9999-exec-3] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 01:55:11 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 01:55:11 [http-nio-9999-exec-3] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-22 01:55:12 [http-nio-9999-exec-3] ERROR c.e.a.e.GlobalExceptionHandler [GlobalExceptionHandler.java:30] - 运行时异常：No primary or single unique constructor found for interface org.springframework.http.server.reactive.ServerHttpResponse
+java.lang.IllegalStateException: No primary or single unique constructor found for interface org.springframework.http.server.reactive.ServerHttpResponse
+	at org.springframework.beans.BeanUtils.getResolvableConstructor(BeanUtils.java:268)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:931)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:910)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:157)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-10-22 01:55:58 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 01:55:58 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 01:56:08 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:56:08 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 18056 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:56:08 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:56:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:56:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:56:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:56:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:56:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:56:11 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:56:11 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:56:11 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:56:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2845 ms
+2025-10-22 01:56:14 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:56:14 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:56:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:56:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 01:56:15 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 7.29 seconds (process running for 8.563)
+2025-10-22 01:56:15 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 01:56:15 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 01:56:15 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
+2025-10-22 01:56:15 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 01:56:15 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@6ad990f5
+2025-10-22 01:56:15 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 01:59:15 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 01:59:15 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 01:59:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 01:59:15 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 01:59:35 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 01:59:36 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 44192 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 01:59:36 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 01:59:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 01:59:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 01:59:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+2025-10-22 01:59:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 01:59:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:59:38 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 01:59:38 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 01:59:39 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 01:59:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2837 ms
+2025-10-22 01:59:41 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 01:59:41 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 01:59:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 01:59:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 01:59:42 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 6.892 seconds (process running for 8.056)
+2025-10-22 01:59:42 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 01:59:42 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 01:59:42 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 01:59:42 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
+2025-10-22 01:59:42 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@7d041607
+2025-10-22 01:59:42 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 02:00:30 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 02:00:30 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 02:00:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 02:00:31 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 02:00:40 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 02:00:40 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 41680 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 02:00:40 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 02:00:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 02:00:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 02:00:42 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+2025-10-22 02:00:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 02:00:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 02:00:43 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 02:00:43 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 02:00:44 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 02:00:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3176 ms
+2025-10-22 02:00:46 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 02:00:46 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 02:00:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 02:00:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 02:00:47 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 7.528 seconds (process running for 8.895)
+2025-10-22 02:00:48 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 02:00:48 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 02:00:48 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 5 ms
+2025-10-22 02:00:48 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 02:00:48 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4f5ac967
+2025-10-22 02:00:48 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 02:04:28 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 02:04:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 02:04:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 02:04:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 02:04:34 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 02:04:34 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 23256 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 02:04:34 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 02:04:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 02:04:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 02:04:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+2025-10-22 02:04:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 02:04:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 02:04:37 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 02:04:37 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 02:04:37 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 02:04:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3428 ms
+2025-10-22 02:04:40 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 02:04:40 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 02:04:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 02:04:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 02:04:41 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 8.317 seconds (process running for 9.358)
+2025-10-22 02:04:42 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 02:04:42 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 02:04:42 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 02:04:42 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 11 ms
+2025-10-22 02:04:42 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@8481728
+2025-10-22 02:04:42 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 02:05:39 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 02:05:39 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 02:05:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 02:05:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 02:05:48 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 02:05:48 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 10968 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 02:05:48 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 02:05:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 02:05:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 02:05:50 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+2025-10-22 02:05:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 02:05:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 02:05:51 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 02:05:51 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 02:05:52 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 02:05:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2953 ms
+2025-10-22 02:05:54 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 02:05:54 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 02:05:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 02:05:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 02:05:55 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 7.06 seconds (process running for 8.255)
+2025-10-22 02:05:55 [RMI TCP Connection(5)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 02:05:55 [RMI TCP Connection(5)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 02:05:55 [RMI TCP Connection(4)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 02:05:55 [RMI TCP Connection(5)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
+2025-10-22 02:05:55 [RMI TCP Connection(4)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@7b3fdb4e
+2025-10-22 02:05:55 [RMI TCP Connection(4)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 02:10:25 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 02:10:25 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 02:10:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 02:10:25 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
