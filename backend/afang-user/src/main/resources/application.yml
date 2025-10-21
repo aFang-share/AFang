@@ -34,6 +34,17 @@ spring:
           auth: true
           starttls.enable: true
           socketFactory.class: javax.net.ssl.SSLSocketFactory
+  ai:
+    openai:
+      api-key: ed7dae35a09c4fe8a0deea67d08ffb8a.HWU7fpSkrJJ7veQg
+      base-url: https://open.bigmodel.cn/api/paas/v4/
+
+      chat:
+        completions-path: /chat/completions
+        options:
+          model: glm-4.5-flash
+          temperature: 0.9
+          max-tokens: 2000
 
 # mybatis-plus配置
 mybatis-plus:
@@ -68,3 +79,4 @@ springdoc:
     path: /public/swagger-ui.html
     enabled: true
   enable-javadoc: true
+

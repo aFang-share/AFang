@@ -1,148 +1,75 @@
-2025-10-20 00:20:25 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 00:20:25 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:53] - Starting AfangUserBackendApplicationTests using Java 21.0.8 with PID 33228 (started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 00:20:25 [main] INFO  c.e.a.AfangUserBackendApplicationTests [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 00:20:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 00:20:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 00:20:27 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 55 ms. Found 0 Redis repository interfaces.
-2025-10-20 00:20:30 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 00:20:30 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 00:20:31 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:20:31 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:20:32 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:59] - Started AfangUserBackendApplicationTests in 7.535 seconds (process running for 9.234)
-2025-10-20 00:20:36 [main] INFO  c.e.afanguserbackend.utils.EmailUtil [EmailUtil.java:75] - 验证邮件发送成功，收件人：3111659946@qq.com
-2025-10-20 00:27:58 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 00:27:58 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:53] - Starting AfangUserBackendApplicationTests using Java 21.0.8 with PID 21808 (started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 00:27:58 [main] INFO  c.e.a.AfangUserBackendApplicationTests [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 00:28:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 00:28:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 00:28:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
-2025-10-20 00:28:04 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 00:28:04 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 00:28:04 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:28:04 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:28:05 [main] INFO  c.e.a.AfangUserBackendApplicationTests [StartupInfoLogger.java:59] - Started AfangUserBackendApplicationTests in 8.415 seconds (process running for 10.093)
-2025-10-20 00:28:09 [main] INFO  c.e.afanguserbackend.utils.EmailUtil [EmailUtil.java:75] - 验证邮件发送成功，收件人：3111659946@qq.com
-2025-10-20 00:34:39 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 00:34:39 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 33088 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 00:34:39 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 00:34:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 00:34:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 00:34:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
-2025-10-20 00:34:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-20 00:34:41 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-20 00:34:41 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-20 00:34:41 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-20 00:34:41 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-20 00:34:41 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2327 ms
-2025-10-20 00:34:43 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 00:34:43 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 00:34:43 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:34:43 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:34:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-20 00:34:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-20 00:34:44 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.398 seconds (process running for 6.371)
-2025-10-20 00:34:44 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-20 00:34:44 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-20 00:34:44 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
-2025-10-20 00:34:44 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-20 00:34:44 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@136725b0
-2025-10-20 00:34:44 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-20 00:35:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-20 00:35:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-20 00:35:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-20 00:35:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
-2025-10-20 00:40:03 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 00:40:03 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 34344 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 00:40:03 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 00:40:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 00:40:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 00:40:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
-2025-10-20 00:40:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-20 00:40:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-20 00:40:06 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-20 00:40:06 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-20 00:40:06 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-20 00:40:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2291 ms
-2025-10-20 00:40:07 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 00:40:07 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 00:40:07 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:40:07 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:40:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-20 00:40:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-20 00:40:08 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.336 seconds (process running for 6.297)
-2025-10-20 00:40:09 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-20 00:40:09 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-20 00:40:09 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-20 00:40:09 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
-2025-10-20 00:40:09 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@45acc922
-2025-10-20 00:40:09 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-20 00:43:08 [http-nio-9999-exec-9] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 649 ms
-2025-10-20 00:44:55 [http-nio-9999-exec-3] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 313 ms
-2025-10-20 00:46:20 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-20 00:46:20 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-20 00:46:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-20 00:46:20 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
-2025-10-20 00:46:28 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 00:46:29 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 30484 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 00:46:29 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 00:46:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 00:46:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 00:46:30 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
-2025-10-20 00:46:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-20 00:46:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-20 00:46:31 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-20 00:46:31 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-20 00:46:31 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-20 00:46:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2630 ms
-2025-10-20 00:46:33 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 00:46:33 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 00:46:33 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:46:33 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 00:46:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-20 00:46:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-20 00:46:34 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.872 seconds (process running for 6.838)
-2025-10-20 00:46:34 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-20 00:46:34 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-20 00:46:34 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 2 ms
-2025-10-20 00:46:34 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-20 00:46:35 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@70fde7af
-2025-10-20 00:46:35 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-20 00:47:11 [http-nio-9999-exec-1] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 670 ms
-2025-10-20 00:56:58 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-20 00:56:58 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-20 00:56:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-20 00:56:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
-2025-10-20 16:58:39 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 16:58:39 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 18128 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 16:58:39 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 16:58:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 16:58:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 16:58:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
-2025-10-20 16:58:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-20 16:58:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-20 16:58:42 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-20 16:58:42 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-20 16:58:42 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-20 16:58:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3607 ms
-2025-10-20 16:58:44 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 16:58:44 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 16:58:44 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 16:58:44 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 16:58:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-20 16:58:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-20 16:58:45 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 7.597 seconds (process running for 8.965)
-2025-10-20 16:58:46 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-20 16:58:46 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-20 16:58:46 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 2 ms
-2025-10-20 16:58:46 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-20 16:58:46 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@5219beb4
-2025-10-20 16:58:46 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-20 17:20:22 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:825] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m35s462ms527µs500ns).
-2025-10-20 17:25:32 [HikariPool-1:housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:825] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m9s890ms892µs700ns).
-2025-10-20 19:40:46 [http-nio-9999-exec-6] ERROR c.e.a.e.GlobalExceptionHandler [GlobalExceptionHandler.java:25] - 系统异常
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource public/swagger.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+2025-10-22 00:00:14 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 00:00:14 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 00:00:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 00:00:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:11:12 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 00:11:12 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 47804 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 00:11:12 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 00:11:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 00:11:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 00:11:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+2025-10-22 00:11:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 00:11:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:11:15 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 00:11:15 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 00:11:15 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 00:11:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2803 ms
+2025-10-22 00:11:17 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 00:11:17 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 00:11:18 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:11:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 00:11:18 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 6.566 seconds (process running for 7.71)
+2025-10-22 00:11:18 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 00:11:18 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 00:11:18 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
+2025-10-22 00:11:18 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 00:11:18 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@35e470b3
+2025-10-22 00:11:18 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 00:11:23 [http-nio-9999-exec-2] INFO  c.e.a.controller.ai.AiController [AiController.java:42] - 收到AI聊天请求，消息长度: 7
+2025-10-22 00:11:24 [http-nio-9999-exec-2] WARN  o.s.a.a.r.SpringAiRetryAutoConfiguration [SpringAiRetryAutoConfiguration.java:68] - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-10-21T16:11:24.068+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+	at org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:100)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:782)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:257)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:274)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:274)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:271)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:255)
+	at org.springframework.ai.chat.model.ChatModel.call(ChatModel.java:33)
+	at com.example.afanguserbackend.controller.ai.AiController.helloAi(AiController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.afanguserbackend.controller.ai.AiController$$SpringCGLIB$$0.helloAi(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
@@ -186,7 +113,7 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
 	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
-	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:79)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
 	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
@@ -271,68 +198,954 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2025-10-20 19:41:07 [http-nio-9999-exec-10] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 636 ms
-2025-10-20 19:44:38 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-20 19:44:38 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-20 19:44:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-20 19:44:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
-2025-10-20 19:44:44 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 19:44:44 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 12988 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 19:44:44 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 19:44:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 19:44:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 19:44:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
-2025-10-20 19:44:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-20 19:44:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-20 19:44:46 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-20 19:44:46 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-20 19:44:47 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-20 19:44:47 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2796 ms
-2025-10-20 19:44:48 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 19:44:48 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 19:44:48 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 19:44:48 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 19:44:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-20 19:44:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-20 19:44:49 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 6.308 seconds (process running for 7.505)
-2025-10-20 19:44:50 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-20 19:44:50 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-20 19:44:50 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-20 19:44:50 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
-2025-10-20 19:44:50 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@51384438
-2025-10-20 19:44:50 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-20 19:45:04 [http-nio-9999-exec-8] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 555 ms
-2025-10-20 20:19:07 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-20 20:19:07 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-20 20:19:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-20 20:19:07 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
-2025-10-20 20:19:18 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
-2025-10-20 20:19:18 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 38772 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
-2025-10-20 20:19:18 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
-2025-10-20 20:19:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-20 20:19:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-20 20:19:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
-2025-10-20 20:19:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
-2025-10-20 20:19:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
-2025-10-20 20:19:21 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
-2025-10-20 20:19:21 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-20 20:19:21 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
-2025-10-20 20:19:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2395 ms
-2025-10-20 20:19:22 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
-2025-10-20 20:19:22 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
-2025-10-20 20:19:23 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validateEmailCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 20:19:23 [main] WARN  o.s.s.c.a.w.c.AuthorizeHttpRequestsConfigurer$AuthorizationManagerRequestMatcherRegistry [AbstractRequestMatcherRegistry.java:203] - One of the patterns in [user/validatePhoneCode] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
-2025-10-20 20:19:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
-2025-10-20 20:19:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
-2025-10-20 20:19:23 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 5.649 seconds (process running for 6.786)
-2025-10-20 20:19:24 [RMI TCP Connection(3)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-20 20:19:24 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
-2025-10-20 20:19:24 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
-2025-10-20 20:19:24 [RMI TCP Connection(3)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
-2025-10-20 20:19:24 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4cb595e3
-2025-10-20 20:19:24 [RMI TCP Connection(2)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
-2025-10-20 20:19:52 [http-nio-9999-exec-9] INFO  o.s.api.AbstractOpenApiResource [AbstractOpenApiResource.java:409] - Init duration for springdoc-openapi is: 537 ms
-2025-10-20 23:47:46 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-20 23:47:46 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
-2025-10-20 23:47:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
-2025-10-20 23:47:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:11:24 [http-nio-9999-exec-2] ERROR c.e.a.controller.ai.AiController [AiController.java:51] - AI聊天处理失败: 404 - {"timestamp":"2025-10-21T16:11:24.068+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-10-21T16:11:24.068+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+	at org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:100)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:782)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:257)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:274)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:274)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:271)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:255)
+	at org.springframework.ai.chat.model.ChatModel.call(ChatModel.java:33)
+	at com.example.afanguserbackend.controller.ai.AiController.helloAi(AiController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.afanguserbackend.controller.ai.AiController$$SpringCGLIB$$0.helloAi(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-10-22 00:13:10 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 00:13:10 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 00:13:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 00:13:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:13:16 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 00:13:16 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 54972 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 00:13:16 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 00:13:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 00:13:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 00:13:18 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+2025-10-22 00:13:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 00:13:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:13:19 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 00:13:19 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 00:13:19 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 00:13:19 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2829 ms
+2025-10-22 00:13:21 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 00:13:21 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 00:13:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:13:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 00:13:22 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 6.667 seconds (process running for 7.793)
+2025-10-22 00:13:22 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 00:13:22 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 00:13:22 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 00:13:22 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 3 ms
+2025-10-22 00:13:22 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@81c1493
+2025-10-22 00:13:22 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 00:13:30 [http-nio-9999-exec-2] INFO  c.e.a.controller.ai.AiController [AiController.java:42] - 收到AI聊天请求，消息长度: 7
+2025-10-22 00:13:31 [http-nio-9999-exec-2] WARN  o.s.a.a.r.SpringAiRetryAutoConfiguration [SpringAiRetryAutoConfiguration.java:68] - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-10-21T16:13:31.039+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+	at org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:100)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:782)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:257)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:274)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:274)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:271)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:255)
+	at org.springframework.ai.chat.model.ChatModel.call(ChatModel.java:33)
+	at com.example.afanguserbackend.controller.ai.AiController.helloAi(AiController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.afanguserbackend.controller.ai.AiController$$SpringCGLIB$$0.helloAi(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-10-22 00:13:31 [http-nio-9999-exec-2] ERROR c.e.a.controller.ai.AiController [AiController.java:51] - AI聊天处理失败: 404 - {"timestamp":"2025-10-21T16:13:31.039+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-10-21T16:13:31.039+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+	at org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:100)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:782)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:257)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:274)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:274)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:271)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:255)
+	at org.springframework.ai.chat.model.ChatModel.call(ChatModel.java:33)
+	at com.example.afanguserbackend.controller.ai.AiController.helloAi(AiController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.afanguserbackend.controller.ai.AiController$$SpringCGLIB$$0.helloAi(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-10-22 00:14:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 00:14:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 00:14:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 00:14:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:14:10 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 00:14:10 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 41724 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 00:14:10 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 00:14:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 00:14:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 00:14:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
+2025-10-22 00:14:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 00:14:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:14:13 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 00:14:13 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 00:14:13 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 00:14:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 2983 ms
+2025-10-22 00:14:15 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 00:14:15 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 00:14:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:14:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 00:14:16 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 6.988 seconds (process running for 8.028)
+2025-10-22 00:14:17 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 00:14:17 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 00:14:17 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 00:14:17 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-22 00:14:17 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@1ce034b0
+2025-10-22 00:14:17 [RMI TCP Connection(1)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 00:14:18 [http-nio-9999-exec-2] INFO  c.e.a.controller.ai.AiController [AiController.java:42] - 收到AI聊天请求，消息长度: 7
+2025-10-22 00:15:27 [http-nio-9999-exec-2] INFO  c.e.a.controller.ai.AiController [AiController.java:47] - AI回复生成成功，回复长度: 2176
+2025-10-22 00:16:52 [http-nio-9999-exec-4] INFO  c.e.a.controller.ai.AiController [AiController.java:42] - 收到AI聊天请求，消息长度: 2
+2025-10-22 00:17:04 [http-nio-9999-exec-4] INFO  c.e.a.controller.ai.AiController [AiController.java:47] - AI回复生成成功，回复长度: 138
+2025-10-22 00:21:52 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 00:21:52 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 00:21:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 00:21:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
+2025-10-22 00:22:02 [background-preinit] INFO  o.h.validator.internal.util.Version [Version.java:21] - HV000001: Hibernate Validator 8.0.3.Final
+2025-10-22 00:22:02 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:53] - Starting AfangUserBackendApplication using Java 21.0.8 with PID 14724 (E:\coding\AFang\backend\afang-user\target\classes started by Lenovo in E:\coding\AFang\backend\afang-user)
+2025-10-22 00:22:02 [main] INFO  c.e.a.AfangUserBackendApplication [SpringApplication.java:652] - No active profile set, falling back to 1 default profile: "default"
+2025-10-22 00:22:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:294] - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-22 00:22:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:145] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-22 00:22:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:213] - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2025-10-22 00:22:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:111] - Tomcat initialized with port 9999 (http)
+2025-10-22 00:22:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Initializing ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:22:06 [main] INFO  o.a.catalina.core.StandardService [DirectJDKLog.java:168] - Starting service [Tomcat]
+2025-10-22 00:22:06 [main] INFO  o.a.catalina.core.StandardEngine [DirectJDKLog.java:168] - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-22 00:22:06 [main] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring embedded WebApplicationContext
+2025-10-22 00:22:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:301] - Root WebApplicationContext: initialization completed in 3515 ms
+2025-10-22 00:22:09 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver [EndpointLinksResolver.java:60] - Exposing 1 endpoint beneath base path '/actuator'
+2025-10-22 00:22:09 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [InitializeUserDetailsBeanManagerConfigurer.java:110] - Global AuthenticationManager configured with UserDetailsService bean with name commonUserServiceImpl
+2025-10-22 00:22:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol [DirectJDKLog.java:168] - Starting ProtocolHandler ["http-nio-9999"]
+2025-10-22 00:22:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer [TomcatWebServer.java:243] - Tomcat started on port 9999 (http) with context path '/api'
+2025-10-22 00:22:10 [main] INFO  c.e.a.AfangUserBackendApplication [StartupInfoLogger.java:59] - Started AfangUserBackendApplication in 8.318 seconds (process running for 9.553)
+2025-10-22 00:22:10 [RMI TCP Connection(2)-192.168.31.203] INFO  o.a.c.c.C.[.[localhost].[/api] [DirectJDKLog.java:168] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-22 00:22:10 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2025-10-22 00:22:10 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:109] - HikariPool-1 - Starting...
+2025-10-22 00:22:10 [RMI TCP Connection(2)-192.168.31.203] INFO  o.s.web.servlet.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2025-10-22 00:22:11 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.pool.HikariPool [HikariPool.java:580] - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@22643a9
+2025-10-22 00:22:11 [RMI TCP Connection(3)-192.168.31.203] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:122] - HikariPool-1 - Start completed.
+2025-10-22 00:22:18 [http-nio-9999-exec-2] INFO  c.e.a.controller.ai.AiController [AiController.java:42] - 收到AI聊天请求，消息长度: 2
+2025-10-22 00:22:19 [http-nio-9999-exec-2] WARN  o.s.a.a.r.SpringAiRetryAutoConfiguration [SpringAiRetryAutoConfiguration.java:68] - Retry error. Retry count:1
+org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-10-21T16:22:18.831+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+	at org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:100)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:782)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:257)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:274)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:274)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:271)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:255)
+	at org.springframework.ai.chat.model.ChatModel.call(ChatModel.java:33)
+	at com.example.afanguserbackend.controller.ai.AiController.helloAi(AiController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.afanguserbackend.controller.ai.AiController$$SpringCGLIB$$0.helloAi(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-10-22 00:22:19 [http-nio-9999-exec-2] ERROR c.e.a.controller.ai.AiController [AiController.java:51] - AI聊天处理失败: 404 - {"timestamp":"2025-10-21T16:22:18.831+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+org.springframework.ai.retry.NonTransientAiException: 404 - {"timestamp":"2025-10-21T16:22:18.831+00:00","status":404,"error":"Not Found","path":"/v4/v1/chat/completions"}
+	at org.springframework.ai.autoconfigure.retry.SpringAiRetryAutoConfiguration$2.handleError(SpringAiRetryAutoConfiguration.java:100)
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:58)
+	at org.springframework.web.client.StatusHandler.lambda$fromErrorHandler$1(StatusHandler.java:71)
+	at org.springframework.web.client.StatusHandler.handle(StatusHandler.java:146)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.applyStatusHandlers(DefaultRestClient.java:838)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$readBody$4(DefaultRestClient.java:827)
+	at org.springframework.web.client.DefaultRestClient.readWithMessageConverters(DefaultRestClient.java:216)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.readBody(DefaultRestClient.java:826)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.lambda$toEntityInternal$2(DefaultRestClient.java:782)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:586)
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:540)
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:680)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:821)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntityInternal(DefaultRestClient.java:781)
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.toEntity(DefaultRestClient.java:770)
+	at org.springframework.ai.openai.api.OpenAiApi.chatCompletionEntity(OpenAiApi.java:257)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$1(OpenAiChatModel.java:274)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:357)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:230)
+	at org.springframework.ai.openai.OpenAiChatModel.lambda$internalCall$3(OpenAiChatModel.java:274)
+	at io.micrometer.observation.Observation.observe(Observation.java:564)
+	at org.springframework.ai.openai.OpenAiChatModel.internalCall(OpenAiChatModel.java:271)
+	at org.springframework.ai.openai.OpenAiChatModel.call(OpenAiChatModel.java:255)
+	at org.springframework.ai.chat.model.ChatModel.call(ChatModel.java:33)
+	at com.example.afanguserbackend.controller.ai.AiController.helloAi(AiController.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
+	at com.example.afanguserbackend.controller.ai.AiController$$SpringCGLIB$$0.helloAi(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:490)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:351)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:83)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:129)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at com.example.afanguserbackend.filter.JwtFilter.doFilterInternal(JwtFilter.java:122)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:241)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:334)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:225)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:138)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-10-22 00:22:38 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:54] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-22 00:22:38 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown [GracefulShutdown.java:76] - Graceful shutdown complete
+2025-10-22 00:22:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:349] - HikariPool-1 - Shutdown initiated...
+2025-10-22 00:22:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource [HikariDataSource.java:351] - HikariPool-1 - Shutdown completed.
