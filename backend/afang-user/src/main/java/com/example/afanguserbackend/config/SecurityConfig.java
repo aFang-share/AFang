@@ -80,10 +80,25 @@ public class SecurityConfig {
                 })
                 // 配置异常处理
                 .exceptionHandling(exception -> exception
+                        // 认证异常处理
                         .authenticationEntryPoint((request, response, authException) -> {
-                            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-                            response.setContentType("application/json;charset=UTF-8");
-                            response.getWriter().write("{\"error\":\"未认证\"}");
+                            log.error("认证异常: {}", authException.getMessage());
+                            // 检查响应是否已提交
+                            if (!response.isCommitted()) {
+                                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                                response.setContentType("application/json;charset=UTF-8");
+                                response.getWriter().write("{\"code\":401,\"message\":\"未认证或登录已过期\",\"data\":null}");
+                            }
+                        })
+                        // 访问拒绝异常处理
+                        .accessDeniedHandler((request, response, accessDeniedException) -> {
+                            log.error("访问拒绝异常: {}", accessDeniedException.getMessage());
+                            // 检查响应是否已提交
+                            if (!response.isCommitted()) {
+                                response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+                                response.setContentType("application/json;charset=UTF-8");
+                                response.getWriter().write("{\"code\":403,\"message\":\"访问被拒绝，权限不足\",\"data\":null}");
+                            }
                         })
                 )
                 // 将自定义JWT过滤器添加到过滤器链中

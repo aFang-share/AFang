@@ -43,16 +43,79 @@ public class AiController {
     }
 
     /**
-     * 流式聊天接口（返回原始SSE格式）
+     * 流式聊天接口（返回OpenAPI格式）
      * 完整路径：http://localhost:端口/public/ai/stream
      */
     @GetMapping(value = "/ai/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<String> streamChat(@RequestParam String message) {
+        return chatClient.prompt(message)
+                .stream()
+                .chatResponse()
+                .map(response -> {
+                    // 提取响应内容
+                    String content = response.getResult().getOutput().getText();
+                    if (content == null) {
+                        content = "";
+                    }
 
-        // 监听流式响应
-        return chatClient.prompt(message).stream().chatResponse()
-                .doOnNext(chatResponse -> log.info("原始SSE响应: {}", chatResponse))
-                .map(json -> json.getResult().getOutput().getText());
+                    // 安全提取metadata信息，添加空值检查
+                    String messageId = "msg_" + System.currentTimeMillis();
+                    String role = "ASSISTANT";
+                    String finishReason = "";
+
+                    try {
+                        Object idObj = response.getResult().getOutput().getMetadata().get("id");
+                        if (idObj != null) {
+                            messageId = idObj.toString();
+                        }
+                    } catch (Exception e) {
+                        log.debug("无法获取messageId，使用默认值: {}", e.getMessage());
+                    }
+
+                    try {
+                        Object roleObj = response.getResult().getOutput().getMetadata().get("role");
+                        if (roleObj != null) {
+                            role = roleObj.toString();
+                        }
+                    } catch (Exception e) {
+                        log.debug("无法获取role，使用默认值: {}", e.getMessage());
+                    }
+
+                    try {
+                        Object finishReasonObj = response.getResult().getMetadata().get("finishReason");
+                        if (finishReasonObj != null) {
+                            finishReason = finishReasonObj.toString();
+                        }
+                    } catch (Exception e) {
+                        log.debug("无法获取finishReason，使用默认值: {}", e.getMessage());
+                    }
+
+                    // 构建OpenAPI格式的响应
+                    String openAiFormat = String.format("""
+                        {
+                            "id": "%s",
+                            "object": "chat.completion.chunk",
+                            "created": %d,
+                            "model": "glm-4.5-flash",
+                            "choices": [
+                                {
+                                    "index": 0,
+                                    "delta": {
+                                        "content": "%s"
+                                    },
+                                    "finish_reason": %s
+                                }
+                            ]
+                        }
+                        """,
+                        messageId,
+                        System.currentTimeMillis() / 1000,
+                        content.replace("\"", "\\\"").replace("\n", "\\n"),
+                        finishReason.isEmpty() ? "null" : "\"" + finishReason + "\""
+                    );
+
+                    return openAiFormat + "\n\n";
+                });
     }
 
     /**
